@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 12:23
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 14:25
 
 .SUBCKT imp_boost_tech GND OTA_VOM OTA_VOP OTA_VINP OTA_VINM VDD VCM_REF
 + VICM_REF BV PHI3 PHI1 VINM VOM VINP VOP PHI4 PHI2
