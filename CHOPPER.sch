@@ -19,10 +19,10 @@ N -80 -120 10 -120 {lab=IN_A}
 N -60 -80 -30 -80 {lab=PHIB}
 N 130 -190 130 -160 {lab=PHIA}
 N 130 80 130 120 {lab=PHIA}
-N 300 -70 340 -70 {lab=PHI2}
+N 300 -70 340 -70 {lab=PHIB}
 N 10 -80 40 -80 {lab=GND}
 N 130 -120 130 -90 {lab=GND}
-N 230 -70 260 -70 {lab=GND}
+N 230 -70 260 -70 {lab=#net1}
 N 130 20 130 40 {lab=GND}
 C {sg13g2_pr/sg13_lv_nmos.sym} 130 -140 1 0 {name=M1
 l=0.13u
@@ -72,7 +72,9 @@ C {lab_pin.sym} 40 -80 0 1 {name=p9 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 130 -90 1 1 {name=p10 sig_type=std_logic lab=GND
 }
-C {lab_pin.sym} 230 -70 2 1 {name=p11 sig_type=std_logic lab=GND
+C {iopin.sym} 360 -10 0 1 {name=p11 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 130 20 0 1 {name=p12 sig_type=std_logic lab=GND
+}
+C {lab_pin.sym} 230 -70 2 1 {name=p13 sig_type=std_logic lab=GND
 }

@@ -39,12 +39,8 @@ N -80 -30 -30 -30 {lab=tail_cmfb}
 N -80 -60 -80 -30 {lab=tail_cmfb}
 N -130 -30 -80 -30 {lab=tail_cmfb}
 N 120 0 120 20 {lab=nbias}
-N 335 20 390 20 {lab=nbias}
-N 120 130 335 130 {lab=gnd}
-N 335 115 335 130 {lab=gnd}
-N 335 20 335 55 {lab=nbias}
 N 120 20 120 70 {lab=nbias}
-N 120 20 335 20 {lab=nbias}
+N 320 20 390 20 {lab=nbias}
 N -10 100 80 100 {lab=#net1}
 N -440 50 -390 50 {lab=vom}
 N -440 0 -440 50 {lab=vom}
@@ -69,6 +65,10 @@ N -130 220 -130 250 {lab=vinp}
 N -170 200 -170 220 {lab=vinp}
 N -170 280 -170 310 {lab=VICM_REF}
 N -350 310 -170 310 {lab=VICM_REF}
+N 320 120 320 130 {lab=gnd}
+N 120 130 320 130 {lab=gnd}
+N 320 20 320 60 {lab=nbias}
+N 120 20 320 20 {lab=nbias}
 C {sg13g2_pr/sg13_hv_nmos.sym} -610 100 0 1 {name=M7
 l=2u
 w=4u
@@ -161,11 +161,6 @@ model=sg13_hv_pmos
 spiceprefix=X
 }
 C {lab_pin.sym} 390 20 2 0 {name=p5 sig_type=std_logic lab=nbias}
-C {capa.sym} 335 85 0 0 {name=C5
-m=1
-value=1p
-footprint=1206
-device="ceramic capacitor"}
 C {iopin.sym} -770 -90 1 0 {name=p1 lab=b_v}
 C {iopin.sym} -640 -170 3 0 {name=p3 lab=vdd}
 C {iopin.sym} -670 -30 0 1 {name=p4 lab=vinm}
@@ -206,3 +201,9 @@ spiceprefix=X
 C {lab_pin.sym} -350 200 3 1 {name=p8 sig_type=std_logic lab=vinm}
 C {lab_pin.sym} -170 200 3 1 {name=p9 sig_type=std_logic lab=vinp}
 C {iopin.sym} -260 310 3 1 {name=p10 lab=VICM_REF}
+C {sg13g2_pr/cap_cmim.sym} 320 90 0 0 {name=C1
+model=cap_cmim
+w=14.0e-6
+l=50.0e-6
+m=1
+spiceprefix=X}

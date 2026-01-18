@@ -150,8 +150,8 @@ C {lab_pin.sym} -390 110 0 0 {name=p39 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 520 -160 0 0 {name=p40 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 680 -160 0 0 {name=p41 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -180 10 0 1 {name=p42 sig_type=std_logic lab=vdd}
-C {iopin.sym} -520 200 0 0 {name=p1 lab=vip}
-C {iopin.sym} -520 260 0 0 {name=p3 lab=vim}
+C {iopin.sym} -520 200 0 0 {name=p1 lab=vinp}
+C {iopin.sym} -520 260 0 0 {name=p3 lab=vinm}
 C {iopin.sym} -510 300 0 0 {name=p4 lab=vop}
 C {iopin.sym} -510 360 0 0 {name=p6 lab=vom}
 C {iopin.sym} 40 190 0 0 {name=p12 lab=ota_vinp}
