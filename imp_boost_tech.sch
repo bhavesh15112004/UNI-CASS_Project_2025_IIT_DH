@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -390 10 -360 10 {lab=bv}
 N -390 40 -360 40 {lab=ota_vinp}
@@ -43,9 +44,8 @@ N 50 -370 50 -290 {lab=phi1}
 N 70 -370 70 -290 {lab=phi2}
 N -690 -370 -690 -290 {lab=phi3}
 N -670 -370 -670 -290 {lab=phi4}
-N -430 -370 -430 -290 {lab=phi4}
+N -430 -370 -430 -290 {lab=phi3}
 N -410 -370 -410 -290 {lab=phi4}
-C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} -990 -180 0 0 {name=x1}
 C {lab_pin.sym} -390 80 0 0 {name=p2 sig_type=std_logic lab=ota_vinm}
 C {lab_pin.sym} -390 40 0 0 {name=p5 sig_type=std_logic lab=ota_vinp
 }
@@ -53,11 +53,11 @@ C {lab_pin.sym} -390 10 0 0 {name=p7 sig_type=std_logic lab=bv}
 C {lab_pin.sym} -180 40 2 0 {name=p8 sig_type=std_logic lab=ota_vop}
 C {lab_pin.sym} -180 80 2 0 {name=p9 sig_type=std_logic lab=ota_vom}
 C {lab_pin.sym} -180 110 2 0 {name=p10 sig_type=std_logic lab=VCM_REF}
-C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} -750 -180 0 0 {name=x3}
-C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} -490 -180 0 0 {name=x4}
-C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} -250 -180 0 0 {name=x5}
-C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} -10 -180 0 0 {name=x6}
-C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} 250 -180 0 0 {name=x7}
+C {/home/prabhas/unic-cass-example/UNI-CASS_Project/final_Design_file/CHOPPER.sym} -750 -180 0 0 {name=x3}
+C {/home/prabhas/unic-cass-example/UNI-CASS_Project/final_Design_file/CHOPPER.sym} -490 -180 0 0 {name=x4}
+C {/home/prabhas/unic-cass-example/UNI-CASS_Project/final_Design_file/CHOPPER.sym} -250 -180 0 0 {name=x5}
+C {/home/prabhas/unic-cass-example/UNI-CASS_Project/final_Design_file/CHOPPER.sym} -10 -180 0 0 {name=x6}
+C {/home/prabhas/unic-cass-example/UNI-CASS_Project/final_Design_file/CHOPPER.sym} 250 -180 0 0 {name=x7}
 C {lab_pin.sym} -990 -240 1 0 {name=p13 sig_type=std_logic lab=vinp}
 C {lab_pin.sym} -990 -220 3 0 {name=p14 sig_type=std_logic lab=vinm}
 C {lab_pin.sym} 200 -240 1 0 {name=p15 sig_type=std_logic lab=ota_vom}
@@ -114,7 +114,7 @@ C {lab_pin.sym} -300 -240 1 0 {name=p17 sig_type=std_logic lab=ota_vinp}
 C {lab_pin.sym} -300 -220 1 1 {name=p18 sig_type=std_logic lab=ota_vinm}
 C {lab_pin.sym} 420 -240 1 0 {name=p19 sig_type=std_logic lab=vom}
 C {lab_pin.sym} 420 -220 3 0 {name=p20 sig_type=std_logic lab=vop}
-C {/home/designer/shared/uni_cass/final_Design_file/Differntial_ended_symbol_making.sym} -270 180 1 0 {name=x2}
+C {/home/prabhas/unic-cass-example/UNI-CASS_Project/final_Design_file/Differntial_ended_symbol_making.sym} -270 180 1 0 {name=x2}
 C {sg13g2_pr/cap_cmim.sym} 680 -190 0 1 {name=C1
 model=cap_cmim
 w=7e-6
@@ -138,7 +138,7 @@ C {lab_pin.sym} 50 -370 1 0 {name=p27 sig_type=std_logic lab=phi1}
 C {lab_pin.sym} 70 -370 1 0 {name=p28 sig_type=std_logic lab=phi2}
 C {lab_pin.sym} -690 -370 1 0 {name=p29 sig_type=std_logic lab=phi3}
 C {lab_pin.sym} -670 -370 1 0 {name=p30 sig_type=std_logic lab=phi4}
-C {lab_pin.sym} -430 -370 1 0 {name=p31 sig_type=std_logic lab=phi4}
+C {lab_pin.sym} -430 -370 1 0 {name=p31 sig_type=std_logic lab=phi3}
 C {lab_pin.sym} -410 -370 1 0 {name=p32 sig_type=std_logic lab=phi4}
 C {lab_pin.sym} -920 -160 2 0 {name=p33 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -680 -160 2 0 {name=p34 sig_type=std_logic lab=gnd}
@@ -154,10 +154,6 @@ C {iopin.sym} -520 200 0 0 {name=p1 lab=vinp}
 C {iopin.sym} -520 260 0 0 {name=p3 lab=vinm}
 C {iopin.sym} -510 300 0 0 {name=p4 lab=vop}
 C {iopin.sym} -510 360 0 0 {name=p6 lab=vom}
-C {iopin.sym} 40 190 0 0 {name=p12 lab=ota_vinp}
-C {iopin.sym} 30 250 0 0 {name=p43 lab=ota_vinm}
-C {iopin.sym} 50 290 0 0 {name=p44 lab=ota_vom}
-C {iopin.sym} 50 350 0 0 {name=p45 lab=ota_vop}
 C {iopin.sym} 300 180 0 0 {name=p46 lab=phi1}
 C {iopin.sym} 290 240 0 0 {name=p47 lab=phi2}
 C {iopin.sym} 310 280 0 0 {name=p48 lab=phi3}
@@ -167,3 +163,4 @@ C {iopin.sym} 310 400 0 0 {name=p51 sig_type=std_logic lab=bv}
 C {iopin.sym} 70 390 0 0 {name=p52 sig_type=std_logic lab=gnd}
 C {iopin.sym} -470 470 0 1 {name=p53 sig_type=std_logic lab=vdd}
 C {iopin.sym} 140 440 2 0 {name=p54 sig_type=std_logic lab=VCM_REF}
+C {/home/prabhas/unic-cass-example/UNI-CASS_Project/final_Design_file/CHOPPER.sym} -990 -180 0 0 {name=x1}

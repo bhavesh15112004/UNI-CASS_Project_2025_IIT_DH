@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 10 -120 100 -120 {lab=IN_A}
 N 10 -120 10 -110 {lab=IN_A}
@@ -24,36 +25,36 @@ N 10 -80 40 -80 {lab=GND}
 N 130 -120 130 -90 {lab=GND}
 N 230 -70 260 -70 {lab=#net1}
 N 130 20 130 40 {lab=GND}
-C {sg13g2_pr/sg13_lv_nmos.sym} 130 -140 1 0 {name=M1
-l=0.13u
-w=0.15u
+C {sg13g2_pr/sg13_hv_nmos.sym} 130 -140 1 0 {name=M1
+l=0.45u
+w=0.3u
 ng=1
 m=1
-model=sg13_lv_nmos
+model=sg13_hv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 130 60 1 1 {name=M2
-l=0.13u
-w=0.15u
+C {sg13g2_pr/sg13_hv_nmos.sym} 130 60 1 1 {name=M2
+l=0.45u
+w=0.3u
 ng=1
 m=1
-model=sg13_lv_nmos
+model=sg13_hv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} -10 -80 2 1 {name=M3
-l=0.13u
-w=0.15u
+C {sg13g2_pr/sg13_hv_nmos.sym} -10 -80 2 1 {name=M3
+l=0.45u
+w=0.3u
 ng=1
 m=1
-model=sg13_lv_nmos
+model=sg13_hv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 280 -70 2 0 {name=M4
-l=0.13u
-w=0.15u
+C {sg13g2_pr/sg13_hv_nmos.sym} 280 -70 2 0 {name=M4
+l=0.45u
+w=0.3u
 ng=1
 m=1
-model=sg13_lv_nmos
+model=sg13_hv_nmos
 spiceprefix=X
 }
 C {iopin.sym} -70 -120 0 1 {name=p1 sig_type=std_logic lab=IN_A}
@@ -76,5 +77,9 @@ C {iopin.sym} 360 -10 0 1 {name=p11 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 130 20 0 1 {name=p12 sig_type=std_logic lab=GND
 }
+<<<<<<< HEAD
 C {lab_pin.sym} 230 -70 2 1 {name=p13 sig_type=std_logic lab=GND
+=======
+C {iopin.sym} 330 110 2 1 {name=p13 sig_type=std_logic lab=GND
+>>>>>>> master
 }
