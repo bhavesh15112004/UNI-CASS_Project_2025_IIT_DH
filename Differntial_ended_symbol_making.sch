@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -590 100 -480 100 {lab=nbias}
 N -630 -80 -630 -30 {lab=tail}
