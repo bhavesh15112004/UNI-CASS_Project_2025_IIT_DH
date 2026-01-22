@@ -28,14 +28,14 @@ value="
 .lib cornerCAP.lib cap_typ
 "
       }
-C {code.sym} -770 90 0 0 {name=s1 only_toplevel=false value="
+C {code.sym} -770 80 0 0 {name=s1 only_toplevel=false value="
 
 
-*.ac dec 10 100 10e8
+.ac dec 10 100 10e8
 *.save all
 *.op
 
-.noise v(out_diff) v3 dec 10 1 10e9
+*.noise v(out_diff) v3 dec 10 1 10e9
 
 
 "}

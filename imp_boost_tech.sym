@@ -41,8 +41,8 @@ B 5 147.5 97.5 152.5 102.5 {name=bv sig_type=std_logic dir=inout}
 B 5 147.5 117.5 152.5 122.5 {name=VICM_REF sig_type=std_logic dir=inout}
 B 5 147.5 137.5 152.5 142.5 {name=VCM_REF sig_type=std_logic dir=inout}
 B 5 147.5 157.5 152.5 162.5 {name=vdd sig_type=std_logic dir=inout}
-P 4 5 130 -170 -130 -170 -130 170 130 170 130 -170 {}
-T {@ina} -41 -56 0 0 0.3 0.3 {}
+P 4 5 130 -170 0 -170 0 170 130 170 130 -170 {}
+T {@ina} 29 -56 0 0 0.3 0.3 {}
 T {@name} 135 -182 0 0 0.2 0.2 {}
 T {phi1} 125 -164 0 1 0.2 0.2 {}
 T {ota_vinp} 125 -144 0 1 0.2 0.2 {}
