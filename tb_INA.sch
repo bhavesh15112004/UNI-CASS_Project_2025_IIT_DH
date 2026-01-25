@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N 20 -20 20 0 {lab=GND}
 N 20 -120 20 -80 {lab=PHI1}
@@ -33,7 +32,7 @@ value="
 .param Tch=100u Fin=1k
 .param delay_phi1=0 delay_phi2=\{Tch/2\} width=\{Tch/2-0.5u\}
 .op
-.tran 10u \{1/Fin\}
+.tran 1u \{1/Fin\}
 .control
 run
 *plot v(PHI1) v(PHI2)v(PHI3) v(PHI4)
@@ -54,29 +53,21 @@ C {vsource.sym} 300 130 0 0 {name=V4 value="pulse(0 1.6 \{delay_phi2+1u\} 10p 10
 C {gnd.sym} 300 180 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 300 60 2 0 {name=p4 sig_type=std_logic lab=PHI4
 }
-C {/home/prabhas/unic-cass-example/UNI-CASS_Project/final_Design_file/imp_boost_tech.sym} 1020 -170 0 0 {name=x1}
 C {vsource.sym} 690 140 0 0 {name=V5 value=1.6 savecurrent=false}
-C {vsource.sym} 780 140 0 0 {name=V6 value="sin(0.8 5m \{Fin\})" savecurrent=false}
-C {vsource.sym} 890 140 0 0 {name=V7 value="dc 0.8 ac 0" savecurrent=false}
-C {gnd.sym} 890 170 0 0 {name=l2 lab=GND}
 C {gnd.sym} 690 170 0 0 {name=l4 lab=GND}
-C {gnd.sym} 780 170 0 0 {name=l6 lab=GND}
-C {lab_pin.sym} 780 110 0 0 {name=p5 sig_type=std_logic lab=vinp
-}
-C {lab_pin.sym} 890 110 2 0 {name=p6 sig_type=std_logic lab=vinm}
-C {vsource.sym} 1020 140 0 0 {name=V8 value="dc 0.6 ac 0" savecurrent=false}
+C {vsource.sym} 1020 140 0 0 {name=V8 value="dc 0.6 " savecurrent=false}
 C {gnd.sym} 1020 170 0 0 {name=l9 lab=GND}
 C {lab_pin.sym} 1020 110 2 0 {name=p7 sig_type=std_logic lab=VCM_REF}
 C {lab_pin.sym} 690 110 0 0 {name=p8 sig_type=std_logic lab=VDD
 }
-C {vsource.sym} 1150 140 0 0 {name=V9 value="dc 0.8 ac 0" savecurrent=false}
+C {vsource.sym} 1150 140 0 0 {name=V9 value="dc 0.8 " savecurrent=false}
 C {gnd.sym} 1150 170 0 0 {name=l8 lab=GND}
 C {lab_pin.sym} 1150 110 2 0 {name=p9 sig_type=std_logic lab=VICM_REF}
 C {gnd.sym} 1280 170 0 0 {name=l12 lab=GND}
 C {isource.sym} 1280 140 0 0 {name=I1 value=1u
 }
 C {lab_pin.sym} 1280 110 2 0 {name=p10 sig_type=std_logic lab=bv}
-C {lab_pin.sym} 1220 -50 0 0 {name=p11 sig_type=std_logic lab=VDD
+C {lab_pin.sym} 1220 -50 0 1 {name=p11 sig_type=std_logic lab=VDD
 }
 C {lab_pin.sym} 1220 -70 2 0 {name=p12 sig_type=std_logic lab=VCM_REF}
 C {lab_pin.sym} 1220 -90 2 0 {name=p13 sig_type=std_logic lab=VICM_REF}
@@ -86,10 +77,10 @@ C {devices/lab_pin.sym} 1220 -170 2 0 {name=p15 sig_type=std_logic lab=PHI4
 }
 C {devices/lab_pin.sym} 1220 -210 2 0 {name=p16 sig_type=std_logic lab=PHI3
 }
-C {lab_pin.sym} 1170 -230 2 0 {name=p17 sig_type=std_logic lab=vinm}
+C {lab_pin.sym} 1220 -230 2 0 {name=p17 sig_type=std_logic lab=vinm}
 C {devices/lab_pin.sym} 1220 -250 2 0 {name=p18 sig_type=std_logic lab=PHI2
 }
-C {lab_pin.sym} 1220 -270 0 0 {name=p19 sig_type=std_logic lab=vinp
+C {lab_pin.sym} 1220 -270 0 1 {name=p19 sig_type=std_logic lab=vinp
 }
 C {devices/lab_pin.sym} 1220 -290 2 0 {name=p20 sig_type=std_logic lab=PHI1
 }
@@ -109,3 +100,12 @@ C {devices/lab_pin.sym} 1220 -190 2 0 {name=p21 sig_type=std_logic lab=vop
 }
 C {devices/lab_pin.sym} 1220 -150 2 0 {name=p22 sig_type=std_logic lab=vom
 }
+C {/home/designer/shared/uni_cass/Design_Analysis_for_low_fliker_noise/imp_boost_tech.sym} 1020 -170 0 0 {name=x1}
+C {vsource_arith.sym} 1060 350 0 0 {name=E1 VOL="0.8+0.0001*cos(2*pi*\{Fin\}*time)"}
+C {vsource_arith.sym} 740 360 0 0 {name=E2 VOL="0.8-0.0001*cos(2*pi*\{Fin\}*time)"}
+C {lab_pin.sym} 740 330 1 0 {name=p23 sig_type=std_logic lab=vinp
+}
+C {lab_pin.sym} 1060 320 1 0 {name=p24 sig_type=std_logic lab=vinm
+}
+C {gnd.sym} 740 390 0 0 {name=l11 lab=GND}
+C {gnd.sym} 1060 380 0 0 {name=l13 lab=GND}

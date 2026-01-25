@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N -590 100 -480 100 {lab=nbias}
 N -630 -80 -630 -30 {lab=tail}
@@ -55,6 +54,10 @@ N -770 -90 -700 -90 {lab=b_v}
 N -770 -110 -770 -90 {lab=b_v}
 N -520 -170 40 -170 {lab=vdd}
 N -440 130 -70 130 {lab=gnd}
+N 320 120 320 130 {lab=gnd}
+N 120 130 320 130 {lab=gnd}
+N 320 20 320 60 {lab=nbias}
+N 120 20 320 20 {lab=nbias}
 N -350 220 -350 250 {lab=vinm}
 N -390 220 -350 220 {lab=vinm}
 N -390 220 -390 250 {lab=vinm}
@@ -66,10 +69,6 @@ N -130 220 -130 250 {lab=vinp}
 N -170 200 -170 220 {lab=vinp}
 N -170 280 -170 310 {lab=VICM_REF}
 N -350 310 -170 310 {lab=VICM_REF}
-N 320 120 320 130 {lab=gnd}
-N 120 130 320 130 {lab=gnd}
-N 320 20 320 60 {lab=nbias}
-N 120 20 320 20 {lab=nbias}
 C {sg13g2_pr/sg13_hv_nmos.sym} -610 100 0 1 {name=M7
 l=2u
 w=4u
@@ -163,7 +162,6 @@ spiceprefix=X
 }
 C {lab_pin.sym} 390 20 2 0 {name=p5 sig_type=std_logic lab=nbias}
 C {iopin.sym} -770 -90 1 0 {name=p1 lab=b_v}
-C {iopin.sym} -640 -170 3 0 {name=p3 lab=vdd}
 C {iopin.sym} -670 -30 0 1 {name=p4 lab=vinm}
 C {iopin.sym} 160 -30 2 1 {name=p6 lab=vcm_ref}
 C {iopin.sym} -400 -30 0 0 {name=p21 lab=vinp}
@@ -183,6 +181,13 @@ m=1
 model=sg13_hv_pmos
 spiceprefix=X
 }
+C {sg13g2_pr/cap_cmim.sym} 320 90 0 0 {name=C1
+model=cap_cmim
+w=14.0e-6
+l=50.0e-6
+m=1
+spiceprefix=X}
+C {iopin.sym} -620 -170 3 0 {name=p13 lab=vdd}
 C {sg13g2_pr/sg13_hv_pmos.sym} -370 250 0 0 {name=M2
 l=1u
 w=10u
@@ -202,9 +207,3 @@ spiceprefix=X
 C {lab_pin.sym} -350 200 3 1 {name=p8 sig_type=std_logic lab=vinm}
 C {lab_pin.sym} -170 200 3 1 {name=p9 sig_type=std_logic lab=vinp}
 C {iopin.sym} -260 310 3 1 {name=p10 lab=VICM_REF}
-C {sg13g2_pr/cap_cmim.sym} 320 90 0 0 {name=C1
-model=cap_cmim
-w=14.0e-6
-l=50.0e-6
-m=1
-spiceprefix=X}
