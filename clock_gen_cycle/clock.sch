@@ -37,7 +37,9 @@ C {lab_pin.sym} -870 -320 1 0 {name=p11 sig_type=std_logic lab=clk}
 C {lab_pin.sym} -650 170 0 1 {name=p12 sig_type=std_logic lab=phi3}
 C {lab_pin.sym} -660 50 0 1 {name=p13 sig_type=std_logic lab=phi4}
 C {vsource.sym} -1320 80 0 0 {name=V1 value="pulse(0 1.6 \{delay_phi1\} 10p 10p \{width\} \{Tch\})" savecurrent=false}
-C {devices/code_shown.sym} -1510 -220 0 0 {name=NGSPICE only_toplevel=true 
+C {lab_pin.sym} -1320 50 1 0 {name=p14 sig_type=std_logic lab=clk}
+C {gnd.sym} -1320 110 0 0 {name=l1 lab=GND}
+C {devices/code_shown.sym} -1550 -300 0 0 {name=NGSPICE only_toplevel=true 
 value="
 .param Tch=100u Fin=1k
 .param delay_phi1=0 delay_phi2=\{Tch/2\} width=\{Tch/2-0.5u\}
@@ -49,5 +51,15 @@ plot v(PHI1) v(PHI2)v(PHI3) v(PHI4)
 *plot  v(vop) v(vom) 
 .endc
 "}
-C {lab_pin.sym} -1320 50 1 0 {name=p14 sig_type=std_logic lab=clk}
-C {gnd.sym} -1320 110 0 0 {name=l1 lab=GND}
+C {simulator_commands_shown.sym} -1390 -470 0 0 {
+name=Libs_Ngspice
+simulator=ngspice
+only_toplevel=false
+value="
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerHBT.lib hbt_typ
+.lib cornerRES.lib res_typ
+.lib cornerCAP.lib cap_typ
+"
+      }
