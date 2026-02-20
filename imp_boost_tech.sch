@@ -156,10 +156,10 @@ C {iopin.sym} -810 440 0 0 {name=p51 sig_type=std_logic lab=bv}
 C {iopin.sym} -800 190 0 0 {name=p52 sig_type=std_logic lab=gnd}
 C {iopin.sym} -810 160 0 0 {name=p53 sig_type=std_logic lab=vdd}
 C {iopin.sym} -810 230 2 1 {name=p54 sig_type=std_logic lab=VCM_REF}
-C {/home/designer/shared/uni_cass/Design_Analysis_for_low_fliker_noise/CHOPPER.sym} -990 -180 0 0 {name=x8}
-C {/home/designer/shared/uni_cass/Design_Analysis_for_low_fliker_noise/CHOPPER.sym} -750 -180 0 0 {name=x1}
-C {/home/designer/shared/uni_cass/Design_Analysis_for_low_fliker_noise/CHOPPER.sym} -490 -180 0 0 {name=x3}
-C {/home/designer/shared/uni_cass/Design_Analysis_for_low_fliker_noise/CHOPPER.sym} -250 -180 0 0 {name=x4}
-C {/home/designer/shared/uni_cass/Design_Analysis_for_low_fliker_noise/CHOPPER.sym} 10 -180 0 0 {name=x5}
-C {/home/designer/shared/uni_cass/Design_Analysis_for_low_fliker_noise/CHOPPER.sym} 250 -180 0 0 {name=x6}
-C {/home/designer/shared/uni_cass/Design_Analysis_for_low_fliker_noise/Differntial_ended_symbol_making.sym} -270 180 1 0 {name=x7}
+C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} -990 -180 0 0 {name=x8}
+C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} -750 -180 0 0 {name=x1}
+C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} -490 -180 0 0 {name=x3}
+C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} -250 -180 0 0 {name=x4}
+C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} 10 -180 0 0 {name=x5}
+C {/home/designer/shared/uni_cass/final_Design_file/CHOPPER.sym} 250 -180 0 0 {name=x6}
+C {/home/designer/shared/uni_cass/final_Design_file/Differntial_ended_symbol_making.sym} -270 180 1 0 {name=x7}

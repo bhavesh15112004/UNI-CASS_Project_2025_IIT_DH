@@ -49,7 +49,7 @@ C {lab_pin.sym} 150 360 2 1 {name=p15 sig_type=std_logic lab=ota_vop}
 C {lab_pin.sym} 150 400 2 1 {name=p16 sig_type=std_logic lab=ota_vom}
 C {gnd.sym} 190 410 0 0 {name=l11 lab=GND}
 C {lab_pin.sym} 190 350 3 1 {name=p17 sig_type=std_logic lab=out_diff}
-C {/home/designer/shared/uni_cass/Design_Analysis_for_low_fliker_noise/Differntial_ended_symbol_making.sym} -320 -160 1 0 {name=x1}
+C {/home/designer/shared/uni_cass/final_Design_file/Differntial_ended_symbol_making.sym} -320 -160 1 0 {name=x1}
 C {lab_pin.sym} -320 -160 2 0 {name=p11 sig_type=std_logic lab=VICM_REF}
 C {vsource_arith.sym} 70 -210 0 0 {name=E3 VOL="0.001*cos(2*pi*1e3*time)"}
 C {gnd.sym} 70 -180 0 0 {name=l9 lab=GND}
@@ -88,22 +88,22 @@ C {lab_pin.sym} 380 -240 2 1 {name=p3 sig_type=std_logic lab=inp
 }
 C {capa.sym} -820 -350 3 0 {name=C3
 m=1
-value=200p
+value=20f
 footprint=1206
 device="ceramic capacitor"}
 C {capa.sym} -820 -230 3 0 {name=C4
 m=1
-value=200p
+value=20f
 footprint=1206
 device="ceramic capacitor"}
 C {capa.sym} -640 -350 3 0 {name=C5
 m=1
-value=1p
+value=1f
 footprint=1206
 device="ceramic capacitor"}
 C {capa.sym} -640 -230 3 0 {name=C6
 m=1
-value=1p
+value=1f
 footprint=1206
 device="ceramic capacitor"}
 C {code_shown.sym} -1000 140 0 0 {name=s2 only_toplevel=false 

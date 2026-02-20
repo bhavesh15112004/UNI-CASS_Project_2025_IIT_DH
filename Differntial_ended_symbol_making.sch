@@ -136,8 +136,8 @@ model=sg13_hv_nmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_hv_pmos.sym} 140 -30 0 1 {name=M15
-l=4.5u
-w=0.5u
+l=0.5u
+w=4.5u
 ng=1
 m=1
 model=sg13_hv_pmos
@@ -190,16 +190,16 @@ spiceprefix=X}
 C {iopin.sym} -620 -170 3 0 {name=p13 lab=vdd}
 C {sg13g2_pr/sg13_hv_pmos.sym} -370 250 0 0 {name=M2
 l=1u
-w=10u
-ng=1
+w=50u
+ng=5
 m=1
 model=sg13_hv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_hv_pmos.sym} -150 250 0 1 {name=M3
 l=1u
-w=10u
-ng=1
+w=50u
+ng=5
 m=1
 model=sg13_hv_pmos
 spiceprefix=X

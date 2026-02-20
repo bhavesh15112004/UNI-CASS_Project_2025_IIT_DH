@@ -45,7 +45,7 @@ C {lab_pin.sym} 310 390 2 1 {name=p15 sig_type=std_logic lab=ota_vop}
 C {lab_pin.sym} 310 430 2 1 {name=p16 sig_type=std_logic lab=ota_vom}
 C {gnd.sym} 350 440 0 0 {name=l11 lab=GND}
 C {lab_pin.sym} 350 380 3 1 {name=p17 sig_type=std_logic lab=out_diff}
-C {/home/designer/shared/uni_cass/Design_Analysis_for_low_fliker_noise/Differntial_ended_symbol_making.sym} -160 -130 1 0 {name=x1}
+C {/home/designer/shared/uni_cass/final_Design_file/Differntial_ended_symbol_making.sym} -160 -130 1 0 {name=x1}
 C {lab_pin.sym} -160 -130 2 0 {name=p11 sig_type=std_logic lab=VICM_REF}
 C {gnd.sym} 230 -150 0 0 {name=l9 lab=GND}
 C {lab_pin.sym} 230 -210 2 1 {name=p14 sig_type=std_logic lab=ota_vinp
