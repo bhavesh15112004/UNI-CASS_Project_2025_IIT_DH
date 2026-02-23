@@ -35,8 +35,8 @@ N -690 -370 -690 -290 {lab=phi3}
 N -670 -370 -670 -290 {lab=phi4}
 N -430 -370 -430 -290 {lab=phi3}
 N -410 -370 -410 -290 {lab=phi4}
-N 150 -240 250 -240 {lab=ota_vom}
-N 150 -220 250 -220 {lab=ota_vop}
+N 150 -240 250 -240 {lab=ota_vop}
+N 150 -220 250 -220 {lab=ota_vom}
 N -580 -420 -580 -240 {lab=#net5}
 N -520 -420 -520 -240 {lab=#net6}
 N -580 -220 -580 -70 {lab=#net4}
@@ -54,8 +54,8 @@ C {lab_pin.sym} -180 80 2 0 {name=p9 sig_type=std_logic lab=ota_vom}
 C {lab_pin.sym} -180 110 2 0 {name=p10 sig_type=std_logic lab=VCM_REF}
 C {lab_pin.sym} -990 -240 1 0 {name=p13 sig_type=std_logic lab=vinp}
 C {lab_pin.sym} -990 -220 3 0 {name=p14 sig_type=std_logic lab=vinm}
-C {lab_pin.sym} 200 -240 1 0 {name=p15 sig_type=std_logic lab=ota_vom}
-C {lab_pin.sym} 200 -220 3 0 {name=p16 sig_type=std_logic lab=ota_vop}
+C {lab_pin.sym} 210 -220 3 0 {name=p15 sig_type=std_logic lab=ota_vom}
+C {lab_pin.sym} 200 -240 1 0 {name=p16 sig_type=std_logic lab=ota_vop}
 C {sg13g2_pr/cap_cmim.sym} -550 -420 1 0 {name=C3
 model=cap_cmim
 w=12.8e-6
@@ -106,8 +106,8 @@ m=1
 spiceprefix=X}
 C {lab_pin.sym} -300 -240 1 0 {name=p17 sig_type=std_logic lab=ota_vinp}
 C {lab_pin.sym} -300 -220 1 1 {name=p18 sig_type=std_logic lab=ota_vinm}
-C {lab_pin.sym} 430 -240 1 0 {name=p19 sig_type=std_logic lab=vom}
-C {lab_pin.sym} 420 -220 3 0 {name=p20 sig_type=std_logic lab=vop}
+C {lab_pin.sym} 420 -240 1 0 {name=p19 sig_type=std_logic lab=vom}
+C {lab_pin.sym} 410 -220 3 0 {name=p20 sig_type=std_logic lab=vop}
 C {sg13g2_pr/cap_cmim.sym} 680 -190 0 1 {name=C1
 model=cap_cmim
 w=7e-6

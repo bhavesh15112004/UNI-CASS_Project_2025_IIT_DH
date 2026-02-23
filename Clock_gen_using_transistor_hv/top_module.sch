@@ -84,10 +84,10 @@ C {devices/code_shown.sym} -850 640 0 0 {name=NGSPICE only_toplevel=true
 value="
 
 .op
-.tran 1um 5m
+.tran 1u 5m
 .control
 run
-*plot v(PHI1) v(PHI2)v(PHI3) v(PHI4)
+plot v(PHI1) v(PHI2)v(PHI3) v(PHI4)
 *plot  v(vop) v(vom) 
 .endc
 "}

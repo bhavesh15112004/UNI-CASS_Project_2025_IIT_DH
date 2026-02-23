@@ -29,14 +29,14 @@ C {vsource.sym} 20 -50 0 0 {name=V1 value="pulse(0 1.6 \{delay_phi1\} 10p 10p \{
 C {gnd.sym} 20 0 0 0 {name=l1 lab=GND}
 C {devices/code_shown.sym} 0 -370 0 0 {name=NGSPICE only_toplevel=true 
 value="
-.param Tch=100u Fin=1k
+.param Tch=10u Fin=1k
 .param delay_phi1=0 delay_phi2=\{Tch/2\} width=\{Tch/2-0.5u\}
-.op
-.tran 1u \{1/Fin\}
+*.op
+.tran 10u \{4/Fin\} \{2/Fin\}
 .control
 run
 plot v(PHI1) v(PHI2)v(PHI3) v(PHI4)
-*plot  v(vop) v(vom) 
+plot  v(vop,vom) 
 .endc
 "}
 C {devices/lab_pin.sym} 20 -120 2 0 {name=p3 sig_type=std_logic lab=PHI1
