@@ -1,0 +1,8 @@
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/nor.sch
+.subckt nor vdd B A gnd out
+*.PININFO vdd:B B:B A:B gnd:B out:B
+M3 net1 A vdd vdd sg13_hv_pmos w=1.2u l=1.8u ng=1 m=1
+M1 out B gnd gnd sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M2 out A gnd gnd sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M4 out B net1 vdd sg13_hv_pmos w=1.2u l=1.8u ng=1 m=1
+.ends

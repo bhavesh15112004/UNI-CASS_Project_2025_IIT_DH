@@ -100,7 +100,7 @@ C {devices/lab_pin.sym} 1220 -190 2 0 {name=p21 sig_type=std_logic lab=vop
 }
 C {devices/lab_pin.sym} 1220 -150 2 0 {name=p22 sig_type=std_logic lab=vom
 }
-C {/home/designer/shared/uni_cass/final_Design_file/imp_boost_tech.sym} 1020 -170 0 0 {name=x1}
+C {/home/designer/shared/unicass_2026/Design_Files/UNI-CASS_Project_2025_IIT_DH/imp_boost_tech.sym} 1020 -170 0 0 {name=x1}
 C {lab_pin.sym} 740 330 1 0 {name=p23 sig_type=std_logic lab=vinp
 }
 C {lab_pin.sym} 1060 320 1 0 {name=p24 sig_type=std_logic lab=vinm

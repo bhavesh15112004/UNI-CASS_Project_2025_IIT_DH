@@ -1,0 +1,21 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 05/03/2026 15:52
+
+.SUBCKT buffer IN|OUT GND OUT IN|OUT$1 IN|OUT$2 IN VDD
+M$1 GND IN|OUT$2 OUT GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$2 GND IN IN|OUT GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$3 GND IN|OUT IN|OUT$1 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$4 GND IN|OUT$1 IN|OUT$2 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$5 VDD IN|OUT$2 OUT VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u
+M$6 VDD IN IN|OUT VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$7 VDD IN|OUT IN|OUT$1 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u
+M$8 VDD IN|OUT$1 IN|OUT$2 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u
+C$9 IN|OUT GND cap_cmim w=6.99u l=6.99u A=48.8601p P=27.96u m=1
+.ENDS buffer

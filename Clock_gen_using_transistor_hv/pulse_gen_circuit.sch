@@ -12,8 +12,8 @@ N -210 -110 -210 -60 {lab=clk_bar}
 N -210 -60 -100 -60 {lab=clk_bar}
 N -170 70 -120 70 {lab=out1}
 N -150 280 -100 280 {lab=#net1}
-N 20 300 50 300 {lab=phi3}
-N 0 90 20 90 {lab=phi4}
+N 20 300 50 300 {lab=phi4}
+N 0 90 20 90 {lab=phi3}
 N -250 280 -230 280 {lab=phi2}
 N -270 70 -250 70 {lab=phi1}
 N 150 -200 180 -200 {lab=phi1}
@@ -29,15 +29,15 @@ C {lab_pin.sym} 40 -80 1 0 {name=p8 sig_type=std_logic lab=y}
 C {lab_pin.sym} -270 70 2 1 {name=p9 sig_type=std_logic lab=phi1}
 C {lab_pin.sym} -250 280 0 0 {name=p10 sig_type=std_logic lab=phi2}
 C {lab_pin.sym} -180 -220 1 0 {name=p11 sig_type=std_logic lab=clk}
-C {lab_pin.sym} 50 300 0 1 {name=p12 sig_type=std_logic lab=phi3}
-C {lab_pin.sym} 20 90 0 1 {name=p13 sig_type=std_logic lab=phi4}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/and.sym} 320 300 0 0 {name=x1}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/and.sym} 340 510 0 0 {name=x2}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/nor.sym} 250 -40 0 0 {name=x4}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/nor.sym} 250 80 0 0 {name=x6}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/inverter.sym} -190 -140 1 0 {name=x7}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/buffer.sym} -80 170 0 0 {name=x8}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/buffer.sym} -60 380 0 0 {name=x9}
+C {lab_pin.sym} 20 90 0 1 {name=p12 sig_type=std_logic lab=phi3}
+C {lab_pin.sym} 50 300 0 1 {name=p13 sig_type=std_logic lab=phi4}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/and.sym} 320 300 0 0 {name=x1}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/and.sym} 340 510 0 0 {name=x2}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/nor.sym} 250 -40 0 0 {name=x4}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/nor.sym} 250 80 0 0 {name=x6}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sym} -190 -140 1 0 {name=x7}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sym} -80 170 0 0 {name=x8}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sym} -60 380 0 0 {name=x9}
 C {lab_pin.sym} -30 -250 2 0 {name=p16 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 110 -230 2 0 {name=p17 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -50 -30 0 0 {name=p18 sig_type=std_logic lab=gnd}
@@ -57,8 +57,8 @@ C {lab_pin.sym} -210 100 0 0 {name=p31 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -190 310 0 0 {name=p32 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -190 250 2 0 {name=p33 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -170 -60 1 0 {name=p34 sig_type=std_logic lab=clk_bar}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/buffer.sym} 240 -100 0 0 {name=x3}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/buffer.sym} 250 20 0 0 {name=x5}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sym} 240 -100 0 0 {name=x3}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sym} 250 20 0 0 {name=x5}
 C {lab_pin.sym} -150 70 1 0 {name=p35 sig_type=std_logic lab=out1}
 C {iopin.sym} 360 -20 0 0 {name=p15 lab=vdd}
 C {iopin.sym} 360 10 0 0 {name=p27 lab=gnd}

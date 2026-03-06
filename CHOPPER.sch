@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N 10 -120 100 -120 {lab=IN_A}
 N 10 -120 10 -110 {lab=IN_A}
@@ -21,10 +20,10 @@ N -60 -80 -30 -80 {lab=PHIB}
 N 130 -190 130 -160 {lab=PHIA}
 N 130 80 130 120 {lab=PHIA}
 N 300 -70 340 -70 {lab=PHIB}
-N 10 -80 40 -80 {lab=GND}
-N 130 -120 130 -90 {lab=GND}
-N 230 -70 260 -70 {lab=#net1}
-N 130 20 130 40 {lab=GND}
+N 10 -80 40 -80 {lab=sub}
+N 130 -120 130 -90 {lab=sub}
+N 230 -70 260 -70 {lab=sub}
+N 130 20 130 40 {lab=sub}
 C {sg13g2_pr/sg13_hv_nmos.sym} 130 -140 1 0 {name=M1
 l=0.45u
 w=0.3u
@@ -77,9 +76,6 @@ C {iopin.sym} 360 -10 0 1 {name=p11 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 130 20 0 1 {name=p12 sig_type=std_logic lab=GND
 }
-<<<<<<< HEAD
 C {lab_pin.sym} 230 -70 2 1 {name=p13 sig_type=std_logic lab=GND
 =======
-C {iopin.sym} 330 110 2 1 {name=p13 sig_type=std_logic lab=GND
->>>>>>> master
-}
+C \{iopin.sym}

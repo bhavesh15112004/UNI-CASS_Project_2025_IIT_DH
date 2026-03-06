@@ -1,0 +1,12 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 04/03/2026 15:24
+
+.SUBCKT nor gnd B A out vdd
+M$1 gnd B out gnd sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$2 out A gnd gnd sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$3 out B \$7 vdd sg13_hv_pmos L=1.8u W=1.2u AS=0.408p AD=0.408p PS=3.08u
++ PD=3.08u
+M$4 \$7 A vdd vdd sg13_hv_pmos L=1.8u W=1.2u AS=0.408p AD=0.408p PS=3.08u
++ PD=3.08u
+.ENDS nor

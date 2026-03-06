@@ -1,0 +1,94 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 06/03/2026 13:17
+
+.SUBCKT imp_boost_tech GND VOM OTA_VOP OTA_VOM VDD VCM_REF VICM|VICM_REF BV
++ PHI4 PHI2 VINM VINP PHI3 PHI1 VOP
+M$1 GND GND GND GND sg13_hv_nmos L=2u W=8u AS=2.72p AD=2.72p PS=18.72u PD=18.72u
+M$2 OTA_VOM \$3 GND GND sg13_hv_nmos L=2u W=4u AS=1.36p AD=1.36p PS=9.36u
++ PD=9.36u
+M$3 GND \$3 OTA_VOP GND sg13_hv_nmos L=2u W=4u AS=1.36p AD=1.36p PS=9.36u
++ PD=9.36u
+M$9 \$34 PHI2 \$57 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$10 \$58 PHI2 OTA_VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$11 \$17 \$17 GND GND sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u
+M$12 GND \$17 \$3 GND sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u
+M$13 \$67 PHI4 \$55 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$14 \$93 PHI4 \$14 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$15 VINM PHI2 \$56 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$16 \$14 PHI2 \$53 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$17 \$52 PHI2 OTA_VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$18 OTA_VOP PHI2 VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$19 \$56 PHI4 \$51 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$20 \$50 PHI4 \$34 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$21 VINP PHI2 \$67 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$22 \$34 PHI1 \$53 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$23 \$58 PHI1 OTA_VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$24 OTA_VOM PHI2 VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$25 \$67 PHI3 \$51 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$26 \$93 PHI3 \$34 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$27 VINM PHI1 \$67 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$28 \$14 PHI1 \$57 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$29 \$52 PHI1 OTA_VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$30 OTA_VOP PHI1 VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$31 \$56 PHI3 \$55 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$32 \$50 PHI3 \$14 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$33 VINP PHI1 \$56 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$34 OTA_VOM PHI1 VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$35 VDD VDD VDD VDD sg13_hv_pmos L=0.4u W=18u AS=6.12p AD=6.12p PS=38.72u
++ PD=38.72u
+M$36 OTA_VOP \$14 \$16 VDD sg13_hv_pmos L=1u W=9u AS=3.06p AD=3.06p PS=19.36u
++ PD=19.36u
+M$37 \$16 \$34 OTA_VOM VDD sg13_hv_pmos L=1u W=9u AS=3.06p AD=3.06p PS=19.36u
++ PD=19.36u
+M$39 \$24 VCM_REF \$3 VDD sg13_hv_pmos L=0.5u W=4.5u AS=1.53p AD=1.53p
++ PS=10.36u PD=10.36u
+M$41 \$24 OTA_VOM \$17 VDD sg13_hv_pmos L=0.5u W=2.25u AS=0.765p AD=0.765p
++ PS=5.18u PD=5.18u
+M$42 \$17 OTA_VOP \$24 VDD sg13_hv_pmos L=0.5u W=2.25u AS=0.765p AD=0.765p
++ PS=5.18u PD=5.18u
+M$47 \$16 BV VDD VDD sg13_hv_pmos L=1u W=16u AS=5.44p AD=5.44p PS=34.72u
++ PD=34.72u
+M$51 VICM|VICM_REF \$34 \$34 VDD sg13_hv_pmos L=1u W=50u AS=11p AD=11p PS=62.2u
++ PD=62.2u
+M$56 \$14 \$14 VICM|VICM_REF VDD sg13_hv_pmos L=1u W=50u AS=11p AD=11p PS=62.2u
++ PD=62.2u
+M$61 \$24 BV VDD VDD sg13_hv_pmos L=1u W=16u AS=5.44p AD=5.44p PS=34.72u
++ PD=34.72u
+M$65 BV BV VDD VDD sg13_hv_pmos L=1u W=4u AS=1.36p AD=1.36p PS=8.68u PD=8.68u
+C$66 \$52 \$57 cap_cmim w=5.7u l=5.7u A=32.49p P=22.8u m=1
+C$67 \$3 GND cap_cmim w=50u l=14u A=700p P=128u m=1
+C$68 \$50 \$55 cap_cmim w=26u l=12.8u A=332.8p P=77.6u m=1
+C$69 \$53 \$58 cap_cmim w=5.7u l=5.7u A=32.49p P=22.8u m=1
+C$70 VOM GND cap_cmim w=98u l=98u A=9604p P=392u m=1
+C$71 \$57 \$52 cap_cmim w=5.7u l=5.7u A=32.49p P=22.8u m=1
+C$72 \$58 \$53 cap_cmim w=5.7u l=5.7u A=32.49p P=22.8u m=1
+C$73 \$51 \$93 cap_cmim w=26u l=12.8u A=332.8p P=77.6u m=1
+C$74 \$93 \$51 cap_cmim w=26u l=12.8u A=332.8p P=77.6u m=1
+C$75 \$55 \$50 cap_cmim w=26u l=12.8u A=332.8p P=77.6u m=1
+C$76 VOP GND cap_cmim w=98u l=98u A=9604p P=392u m=1
+.ENDS imp_boost_tech

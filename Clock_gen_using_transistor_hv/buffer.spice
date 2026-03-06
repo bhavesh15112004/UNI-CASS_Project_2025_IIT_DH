@@ -1,0 +1,20 @@
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sch
+.subckt buffer in out vdd gnd
+*.PININFO in:B out:B vdd:B gnd:B
+x1 in net1 vdd gnd inverter
+x2 net1 net2 vdd gnd inverter
+x3 net2 net3 vdd gnd inverter
+x4 net3 out vdd gnd inverter
+XC1 net1 gnd net4 cap_rfcmim w=7.0e-6 l=7.0e-6 wfeed=5.0e-6
+.ends
+
+* expanding   symbol:
+*+  /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sym # of pins=4
+** sym_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sym
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sch
+.subckt inverter in out vdd gnd
+*.PININFO in:B vdd:B out:B gnd:B
+M3 out in vdd vdd sg13_hv_pmos w=0.6u l=0.9u ng=1 m=1
+M1 out in gnd gnd sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+.ends
+

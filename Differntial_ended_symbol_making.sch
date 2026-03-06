@@ -5,11 +5,9 @@ V {}
 S {}
 E {}
 N -590 100 -480 100 {lab=nbias}
-N -630 -80 -630 -30 {lab=tail}
 N -520 -80 -440 -80 {lab=tail}
-N -440 -80 -440 -30 {lab=tail}
 N -440 100 -440 130 {lab=gnd}
-N -630 130 -440 130 {lab=gnd}
+N -580 130 -440 130 {lab=gnd}
 N -520 -110 -520 -80 {lab=tail}
 N -630 -80 -520 -80 {lab=tail}
 N -520 -170 -520 -140 {lab=vdd}
@@ -23,7 +21,6 @@ N -70 0 -70 50 {lab=#net1}
 N -10 50 -10 100 {lab=#net1}
 N -30 100 -10 100 {lab=#net1}
 N 40 -80 120 -80 {lab=tail_cmfb}
-N 120 -80 120 -30 {lab=tail_cmfb}
 N 120 100 120 130 {lab=gnd}
 N -70 130 120 130 {lab=gnd}
 N 40 -110 40 -80 {lab=tail_cmfb}
@@ -35,9 +32,7 @@ N -80 -60 -30 -60 {lab=tail_cmfb}
 N -80 -80 40 -80 {lab=tail_cmfb}
 N -80 -80 -80 -60 {lab=tail_cmfb}
 N -130 -60 -80 -60 {lab=tail_cmfb}
-N -80 -30 -30 -30 {lab=tail_cmfb}
-N -80 -60 -80 -30 {lab=tail_cmfb}
-N -130 -30 -80 -30 {lab=tail_cmfb}
+N -100 -30 -30 -30 {lab=vdd}
 N 120 0 120 20 {lab=nbias}
 N 120 20 120 70 {lab=nbias}
 N 320 20 390 20 {lab=nbias}
@@ -52,52 +47,82 @@ N -700 -140 -700 -90 {lab=b_v}
 N -730 -140 -700 -140 {lab=b_v}
 N -770 -90 -700 -90 {lab=b_v}
 N -770 -110 -770 -90 {lab=b_v}
-N -520 -170 40 -170 {lab=vdd}
+N -100 -170 40 -170 {lab=vdd}
 N -440 130 -70 130 {lab=gnd}
 N 320 120 320 130 {lab=gnd}
 N 120 130 320 130 {lab=gnd}
 N 320 20 320 60 {lab=nbias}
 N 120 20 320 20 {lab=nbias}
-N -350 220 -350 250 {lab=vinm}
 N -390 220 -350 220 {lab=vinm}
 N -390 220 -390 250 {lab=vinm}
 N -350 200 -350 220 {lab=vinm}
 N -350 280 -350 310 {lab=VICM_REF}
-N -170 220 -170 250 {lab=vinp}
 N -170 220 -130 220 {lab=vinp}
 N -130 220 -130 250 {lab=vinp}
 N -170 200 -170 220 {lab=vinp}
 N -170 280 -170 310 {lab=VICM_REF}
 N -350 310 -170 310 {lab=VICM_REF}
+N -630 -80 -630 -60 {lab=tail}
+N -440 -80 -440 -60 {lab=tail}
+N -100 -170 -100 -30 {lab=vdd}
+N -260 -170 -100 -170 {lab=vdd}
+N -130 -30 -100 -30 {lab=vdd}
+N 120 -80 120 -60 {lab=tail_cmfb}
+N -260 250 -170 250 {lab=vdd}
+N -260 -170 -260 250 {lab=vdd}
+N -460 -170 -260 -170 {lab=vdd}
+N -350 250 -260 250 {lab=vdd}
+N -460 -30 -440 -30 {lab=vdd}
+N -460 -170 -460 -30 {lab=vdd}
+N -520 -170 -460 -170 {lab=vdd}
+N -630 -30 -460 -30 {lab=vdd}
+N 110 -30 120 -30 {lab=vdd}
+N 110 -170 110 -30 {lab=vdd}
+N 40 -170 110 -170 {lab=vdd}
+N -630 250 -630 280 {lab=vdd}
+N -770 250 -770 280 {lab=gnd}
+N -710 250 -710 280 {lab=gnd}
+N -770 250 -710 250 {lab=gnd}
+N -730 280 -710 280 {lab=gnd}
+N -710 280 -710 310 {lab=gnd}
+N -770 310 -710 310 {lab=gnd}
+N -670 250 -670 310 {lab=vdd}
+N -670 250 -630 250 {lab=vdd}
+N -670 310 -630 310 {lab=vdd}
+N -630 210 -630 250 {lab=vdd}
+N -770 180 -770 250 {lab=gnd}
+N -770 180 -580 180 {lab=gnd}
+N -580 130 -580 180 {lab=gnd}
+N -630 130 -580 130 {lab=gnd}
 C {sg13g2_pr/sg13_hv_nmos.sym} -610 100 0 1 {name=M7
 l=2u
-w=4u
+w=2u
 ng=1
-m=1
+m=2
 model=sg13_hv_nmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_hv_pmos.sym} -650 -30 0 0 {name=M8
 l=1u
-w=9u
+w=4.5u
 ng=1
-m=1
+m=2
 model=sg13_hv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_hv_nmos.sym} -460 100 0 0 {name=M9
 l=2u
-w=4u
+w=2u
 ng=1
-m=1
+m=2
 model=sg13_hv_nmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_hv_pmos.sym} -420 -30 0 1 {name=M10
 l=1u
-w=9u
+w=4.5u
 ng=1
-m=1
+m=2
 model=sg13_hv_pmos
 spiceprefix=X
 }
@@ -137,9 +162,9 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_hv_pmos.sym} 140 -30 0 1 {name=M15
 l=0.5u
-w=4.5u
+w=2.25u
 ng=1
-m=1
+m=2
 model=sg13_hv_pmos
 spiceprefix=X
 }
@@ -186,7 +211,7 @@ model=cap_cmim
 w=14.0e-6
 l=50.0e-6
 m=1
-spiceprefix=X}
+spiceprefix=""}
 C {iopin.sym} -620 -170 3 0 {name=p13 lab=vdd}
 C {sg13g2_pr/sg13_hv_pmos.sym} -370 250 0 0 {name=M2
 l=1u
@@ -207,3 +232,20 @@ spiceprefix=X
 C {lab_pin.sym} -350 200 3 1 {name=p8 sig_type=std_logic lab=vinm}
 C {lab_pin.sym} -170 200 3 1 {name=p9 sig_type=std_logic lab=vinp}
 C {iopin.sym} -260 310 3 1 {name=p10 lab=VICM_REF}
+C {sg13g2_pr/sg13_hv_pmos.sym} -650 280 0 0 {name=M4
+l=0.4u
+w=4.5u
+ng=1
+m=4
+model=sg13_hv_pmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_hv_nmos.sym} -750 280 0 1 {name=M5
+l=2u
+w=2u
+ng=1
+m=4
+model=sg13_hv_nmos
+spiceprefix=X
+}
+C {lab_pin.sym} -630 210 0 0 {name=p3 sig_type=std_logic lab=vdd}

@@ -35,13 +35,13 @@ C {lab_pin.sym} 120 600 0 0 {name=p10 sig_type=std_logic lab=phi2}
 C {lab_pin.sym} 190 100 1 0 {name=p11 sig_type=std_logic lab=clk}
 C {lab_pin.sym} 420 620 0 1 {name=p12 sig_type=std_logic lab=phi3}
 C {lab_pin.sym} 390 410 0 1 {name=p13 sig_type=std_logic lab=phi4}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/and.sym} 690 620 0 0 {name=x1}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/and.sym} 710 830 0 0 {name=x2}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/nor.sym} 620 280 0 0 {name=x4}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/nor.sym} 620 400 0 0 {name=x6}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/inverter.sym} 180 180 1 0 {name=x7}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/buffer.sym} 290 490 0 0 {name=x8}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/buffer.sym} 310 700 0 0 {name=x9}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/and.sym} 690 620 0 0 {name=x1}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/and.sym} 710 830 0 0 {name=x2}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/nor.sym} 620 280 0 0 {name=x4}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/nor.sym} 620 400 0 0 {name=x6}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sym} 180 180 1 0 {name=x7}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sym} 290 490 0 0 {name=x8}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sym} 310 700 0 0 {name=x9}
 C {lab_pin.sym} -400 130 1 0 {name=p15 sig_type=std_logic lab=vdd}
 C {vsource.sym} -400 180 0 0 {name=V2 value="1.6" savecurrent=false}
 C {gnd.sym} -400 240 0 0 {name=l2 lab=gnd}
@@ -91,6 +91,6 @@ plot v(PHI1) v(PHI2)v(PHI3) v(PHI4)
 *plot  v(vop) v(vom) 
 .endc
 "}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/buffer.sym} 610 220 0 0 {name=x3}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/buffer.sym} 620 340 0 0 {name=x5}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sym} 610 220 0 0 {name=x3}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sym} 620 340 0 0 {name=x5}
 C {lab_pin.sym} 220 390 1 0 {name=p35 sig_type=std_logic lab=out1}

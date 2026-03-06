@@ -43,4 +43,4 @@ C {lab_pin.sym} -10 0 0 0 {name=p1 sig_type=std_logic lab=vin}
 C {lab_pin.sym} 30 -20 1 0 {name=p2 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 30 20 1 1 {name=p3 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 120 0 2 0 {name=p4 sig_type=std_logic lab=out}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/inverter.sym} 40 -20 0 0 {name=x1}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sym} 40 -20 0 0 {name=x1}

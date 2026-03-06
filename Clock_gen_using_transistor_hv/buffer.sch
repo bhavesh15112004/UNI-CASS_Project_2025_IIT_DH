@@ -5,10 +5,12 @@ V {}
 S {}
 E {}
 N -50 -10 80 -10 {lab=#net1}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/inverter.sym} -80 -30 0 0 {name=x1}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/inverter.sym} 130 -30 0 0 {name=x2}
+N 160 -10 180 -10 {lab=#net2}
+N 260 -10 280 -10 {lab=#net3}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sym} -80 -30 0 0 {name=x1}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sym} 130 -30 0 0 {name=x2}
 C {lab_pin.sym} -130 -10 0 0 {name=p1 sig_type=std_logic lab=in}
-C {lab_pin.sym} 160 -10 0 1 {name=p2 sig_type=std_logic lab=out}
+C {lab_pin.sym} 360 -10 0 1 {name=p2 sig_type=std_logic lab=out}
 C {iopin.sym} -160 70 0 0 {name=p3 lab=in}
 C {iopin.sym} -160 110 0 0 {name=p4 lab=out}
 C {iopin.sym} -160 140 0 0 {name=p5 lab=vdd}
@@ -17,3 +19,16 @@ C {lab_pin.sym} -90 -30 3 1 {name=p7 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -90 10 1 1 {name=p8 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 120 -30 3 1 {name=p10 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 120 10 1 1 {name=p11 sig_type=std_logic lab=gnd}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sym} 230 -30 0 0 {name=x3}
+C {lab_pin.sym} 220 -30 3 1 {name=p9 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 220 10 1 1 {name=p12 sig_type=std_logic lab=gnd}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sym} 330 -30 0 0 {name=x4}
+C {lab_pin.sym} 320 -30 3 1 {name=p13 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 320 10 1 1 {name=p14 sig_type=std_logic lab=gnd}
+C {lab_pin.sym} 10 50 1 1 {name=p15 sig_type=std_logic lab=gnd}
+C {sg13g2_pr/cap_rfcmim.sym} 10 20 0 0 {name=C1 
+model=cap_rfcmim
+w=7.0e-6
+l=7.0e-6
+wfeed=5.0e-6
+spiceprefix=X}

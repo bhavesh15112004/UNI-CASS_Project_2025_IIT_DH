@@ -1,0 +1,13 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 04/03/2026 17:36
+
+.SUBCKT TOP
+M$1 IN|OUT|VDD|gnd IN|OUT|VDD|gnd IN|OUT|VDD|gnd IN|OUT|VDD|gnd sg13_hv_pmos
++ L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u PD=1.88u
+M$2 IN|OUT|VDD|gnd IN IN|OUT|VDD|gnd IN|OUT|VDD|gnd sg13_hv_pmos L=0.9u W=0.6u
++ AS=0.204p AD=0.204p PS=1.88u PD=1.88u
+M$3 IN|OUT|VDD|gnd IN|OUT|VDD|gnd IN|OUT|VDD|gnd IN|OUT|VDD|gnd sg13_hv_pmos
++ L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u PD=1.88u
+M$4 IN|OUT|VDD|gnd IN|OUT|VDD|gnd IN|OUT|VDD|gnd IN|OUT|VDD|gnd sg13_hv_pmos
++ L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u PD=1.88u
+C$5 \$3 \$2 cap_cmim w=7u l=7u A=49p P=28u m=1
+.ENDS TOP

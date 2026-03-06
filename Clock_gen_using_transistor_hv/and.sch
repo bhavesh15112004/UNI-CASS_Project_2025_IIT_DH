@@ -12,7 +12,6 @@ N -60 -110 -60 -70 {lab=vdd}
 N -120 -70 -60 -70 {lab=vdd}
 N -120 -70 -120 -40 {lab=vdd}
 N -0 -70 -0 -40 {lab=vdd}
-N -50 40 -50 70 {lab=#net2}
 N -50 100 -50 130 {lab=gnd}
 N -50 0 70 0 {lab=#net1}
 N -50 -10 -50 0 {lab=#net1}
@@ -23,6 +22,12 @@ N 110 10 150 10 {lab=out}
 N 110 0 110 10 {lab=out}
 N 110 -80 110 -30 {lab=vdd}
 N 70 -30 70 0 {lab=#net1}
+N -50 40 -0 40 {lab=gnd}
+N -0 40 0 130 {lab=gnd}
+N -50 130 0 130 {lab=gnd}
+N 110 60 150 60 {lab=gnd}
+N 150 60 150 100 {lab=gnd}
+N 110 100 150 100 {lab=gnd}
 C {lab_pin.sym} -50 130 3 0 {name=p2 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -60 -110 1 0 {name=p4 sig_type=std_logic lab=vdd}
 C {sg13g2_pr/sg13_hv_pmos.sym} -140 -40 0 0 {name=M3
@@ -61,8 +66,8 @@ C {lab_pin.sym} 110 100 3 0 {name=p5 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 150 10 0 1 {name=p6 sig_type=std_logic lab=out}
 C {lab_pin.sym} 110 -80 1 0 {name=p7 sig_type=std_logic lab=vdd}
 C {sg13g2_pr/sg13_hv_pmos.sym} 90 -30 0 0 {name=M5
-l=0.45u
-w=0.3u
+l=0.9u
+w=0.6u
 ng=1
 m=1
 model=sg13_hv_pmos

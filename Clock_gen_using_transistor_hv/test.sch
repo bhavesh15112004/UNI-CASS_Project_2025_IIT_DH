@@ -26,7 +26,7 @@ plot v(PHI1) v(PHI2)v(PHI3) v(PHI4)
 *plot  v(vop) v(vom) 
 .endc
 "}
-C {/home/designer/shared/uni_cass/final_Design_file/Clock_gen_using_transistor_hv/pulse_gen_circuit.sym} -580 510 0 0 {name=x1}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/pulse_gen_circuit.sym} -580 510 0 0 {name=x1}
 C {devices/lab_pin.sym} -430 450 2 0 {name=p1 sig_type=std_logic lab=clk
 }
 C {lab_pin.sym} -430 470 2 0 {name=p2 sig_type=std_logic lab=vdd}
