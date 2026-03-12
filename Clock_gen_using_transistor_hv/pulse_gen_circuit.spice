@@ -1,0 +1,66 @@
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/pulse_gen_circuit.sch
+.subckt pulse_gen_circuit clk vdd gnd phi1 phi2 phi3 phi4
+*.PININFO vdd:B gnd:B phi1:B phi2:B phi3:B phi4:B clk:B
+x1 vdd x out1 gnd phi3 and
+x2 vdd y net1 gnd phi4 and
+x4 vdd phi2 clk gnd x nor
+x6 vdd clk_bar phi1 gnd y nor
+x7 clk clk_bar vdd gnd inverter
+x8 phi1 out1 vdd gnd buffer
+x9 phi2 net1 vdd gnd buffer
+x3 x phi1 vdd gnd buffer
+x5 y phi2 vdd gnd buffer
+.ends
+
+* expanding   symbol:
+*+  /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/and.sym # of pins=5
+** sym_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/and.sym
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/and.sch
+.subckt and vdd B A gnd out
+*.PININFO vdd:B B:B A:B gnd:B out:B
+M3 net1 A vdd vdd sg13_hv_pmos w=0.3u l=0.45u ng=1 m=1
+M1 net2 B gnd gnd sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M2 net1 A net2 gnd sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M4 net1 B vdd vdd sg13_hv_pmos w=0.3u l=0.45u ng=1 m=1
+M5 out net1 vdd vdd sg13_hv_pmos w=0.6u l=0.9u ng=1 m=1
+M6 out net1 gnd gnd sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+.ends
+
+
+* expanding   symbol:
+*+  /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/nor.sym # of pins=5
+** sym_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/nor.sym
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/nor.sch
+.subckt nor vdd B A gnd out
+*.PININFO vdd:B B:B A:B gnd:B out:B
+M3 net1 A vdd vdd sg13_hv_pmos w=1.2u l=1.8u ng=1 m=1
+M1 out B gnd gnd sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M2 out A gnd gnd sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+M4 out B net1 vdd sg13_hv_pmos w=1.2u l=1.8u ng=1 m=1
+.ends
+
+
+* expanding   symbol:
+*+  /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sym # of pins=4
+** sym_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sym
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/inverter.sch
+.subckt inverter in out vdd gnd
+*.PININFO in:B vdd:B out:B gnd:B
+M3 out in vdd vdd sg13_hv_pmos w=0.6u l=0.9u ng=1 m=1
+M1 out in gnd gnd sg13_hv_nmos w=0.3u l=0.45u ng=1 m=1
+.ends
+
+
+* expanding   symbol:
+*+  /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sym # of pins=4
+** sym_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sym
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/buffer.sch
+.subckt buffer in out vdd gnd
+*.PININFO in:B out:B vdd:B gnd:B
+x1 in net1 vdd gnd inverter
+x2 net1 net2 vdd gnd inverter
+x3 net2 net3 vdd gnd inverter
+x4 net3 out vdd gnd inverter
+C1 net1 gnd cap_cmim w=7.0e-6 l=7.0e-6 m=1
+.ends
+

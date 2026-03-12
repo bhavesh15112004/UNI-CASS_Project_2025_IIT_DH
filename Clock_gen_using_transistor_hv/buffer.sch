@@ -26,9 +26,9 @@ C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CAS
 C {lab_pin.sym} 320 -30 3 1 {name=p13 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 320 10 1 1 {name=p14 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 10 50 1 1 {name=p15 sig_type=std_logic lab=gnd}
-C {sg13g2_pr/cap_rfcmim.sym} 10 20 0 0 {name=C1 
-model=cap_rfcmim
+C {sg13g2_pr/cap_cmim.sym} 10 20 0 0 {name=C1
+model=cap_cmim
 w=7.0e-6
 l=7.0e-6
-wfeed=5.0e-6
-spiceprefix=X}
+m=1
+spiceprefix=""}

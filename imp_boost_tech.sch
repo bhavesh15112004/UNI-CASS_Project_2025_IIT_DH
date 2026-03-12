@@ -20,9 +20,8 @@ N -110 -240 -80 -240 {lab=#net9}
 N -20 -240 10 -240 {lab=#net10}
 N -350 -240 -250 -240 {lab=ota_vinp}
 N -350 -220 -250 -220 {lab=ota_vinm}
-N 390 -240 680 -240 {lab=vom}
+N 390 -240 710 -240 {lab=vom}
 N 390 -220 520 -220 {lab=vop}
-N 680 -240 680 -220 {lab=vom}
 N -930 -370 -930 -290 {lab=phi1}
 N -910 -370 -910 -290 {lab=phi2}
 N -190 -370 -190 -290 {lab=phi1}
@@ -45,6 +44,7 @@ N -80 -420 -80 -240 {lab=#net9}
 N -80 -220 -80 -70 {lab=#net8}
 N -20 -220 -20 -70 {lab=#net7}
 N -20 -420 -20 -240 {lab=#net10}
+N 710 -240 710 -220 {lab=vom}
 C {lab_pin.sym} -390 80 0 0 {name=p2 sig_type=std_logic lab=ota_vinm}
 C {lab_pin.sym} -390 40 0 0 {name=p5 sig_type=std_logic lab=ota_vinp
 }
@@ -61,65 +61,53 @@ model=cap_cmim
 w=26e-6
 l=12.8e-6
 m=1
-spiceprefix=""}
+spiceprefix=X}
 C {sg13g2_pr/cap_cmim.sym} -550 -330 3 1 {name=C4
 model=cap_cmim
 w=26e-6
 l=12.8e-6
 m=1
-spiceprefix=""}
+spiceprefix=X}
 C {sg13g2_pr/cap_cmim.sym} -550 -160 1 0 {name=C5
 model=cap_cmim
 w=26e-6
 l=12.8e-6
 m=1
-spiceprefix=""}
+spiceprefix=X}
 C {sg13g2_pr/cap_cmim.sym} -550 -70 3 1 {name=C6
 model=cap_cmim
 w=26e-6
 l=12.8e-6
 m=1
-spiceprefix=""}
+spiceprefix=X}
 C {sg13g2_pr/cap_cmim.sym} -50 -420 1 0 {name=C7
 model=cap_cmim
 w=5.7e-6
 l=5.7e-6
 m=1
-spiceprefix=""}
+spiceprefix=X}
 C {sg13g2_pr/cap_cmim.sym} -50 -330 3 1 {name=C8
 model=cap_cmim
 w=5.7e-6
 l=5.7e-6
 m=1
-spiceprefix=""}
+spiceprefix=X}
 C {sg13g2_pr/cap_cmim.sym} -50 -160 1 0 {name=C9
 model=cap_cmim
 w=5.7e-6
 l=5.7e-6
 m=1
-spiceprefix=""}
+spiceprefix=X}
 C {sg13g2_pr/cap_cmim.sym} -50 -70 3 1 {name=C10
 model=cap_cmim
 w=5.7e-6
 l=5.7e-6
 m=1
-spiceprefix=""}
+spiceprefix=X}
 C {lab_pin.sym} -300 -240 1 0 {name=p17 sig_type=std_logic lab=ota_vinp}
 C {lab_pin.sym} -300 -220 1 1 {name=p18 sig_type=std_logic lab=ota_vinm}
 C {lab_pin.sym} 430 -240 1 0 {name=p19 sig_type=std_logic lab=vom}
 C {lab_pin.sym} 420 -220 3 0 {name=p20 sig_type=std_logic lab=vop}
-C {sg13g2_pr/cap_cmim.sym} 680 -190 0 1 {name=C1
-model=cap_cmim
-w=98u
-l=98u
-m=1
-spiceprefix=""}
-C {sg13g2_pr/cap_cmim.sym} 520 -190 0 1 {name=C2
-model=cap_cmim
-w=98u
-l=98u
-m=1
-spiceprefix=""}
 C {lab_pin.sym} -270 180 2 0 {name=p11 sig_type=std_logic lab=VICM_REF}
 C {lab_pin.sym} -930 -370 1 0 {name=p21 sig_type=std_logic lab=phi1}
 C {lab_pin.sym} -910 -370 1 0 {name=p22 sig_type=std_logic lab=phi2}
@@ -141,7 +129,7 @@ C {lab_pin.sym} 80 -160 2 0 {name=p37 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 320 -160 2 0 {name=p38 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -390 110 0 0 {name=p39 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 520 -160 0 0 {name=p40 sig_type=std_logic lab=gnd}
-C {lab_pin.sym} 680 -160 0 0 {name=p41 sig_type=std_logic lab=gnd}
+C {lab_pin.sym} 710 -160 0 0 {name=p41 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -180 10 0 1 {name=p42 sig_type=std_logic lab=vdd}
 C {iopin.sym} -800 -10 0 0 {name=p1 lab=vinp}
 C {iopin.sym} -800 20 0 0 {name=p3 lab=vinm}
@@ -163,3 +151,15 @@ C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CAS
 C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/CHOPPER.sym} 10 -180 0 0 {name=x5}
 C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/CHOPPER.sym} 250 -180 0 0 {name=x6}
 C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Differntial_ended_symbol_making.sym} -270 180 1 0 {name=x7}
+C {sg13g2_pr/cap_cmim.sym} 710 -190 0 0 {name=C1
+model=cap_cmim
+w=7.0e-6
+l=7.0e-6
+m=1
+spiceprefix=X}
+C {sg13g2_pr/cap_cmim.sym} 520 -190 0 0 {name=C2
+model=cap_cmim
+w=7.0e-6
+l=7.0e-6
+m=1
+spiceprefix=X}

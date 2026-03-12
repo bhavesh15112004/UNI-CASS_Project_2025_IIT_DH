@@ -1,0 +1,117 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 12/03/2026 09:32
+
+.SUBCKT pulse_gen_circuit PHI2 OUT GND PHI4 B|OUT VDD PHI1 CLK IN|out IN|OUT
++ IN|OUT$1 PHI3 A|OUT IN|OUT$2 IN|OUT$3 IN|OUT$4 IN|OUT$5
+M$1 GND \$6 PHI4 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$2 GND \$1 \$7 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$3 \$7 \$8 \$6 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$4 GND B|OUT \$1 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$5 \$1 PHI1 GND GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$6 GND \$1 \$3 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$7 GND \$20 PHI2 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$8 GND PHI2 OUT GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$9 GND \$19 \$20 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$10 GND \$3 \$19 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$11 GND \$21 \$8 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$12 GND \$23 \$21 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$13 GND OUT \$23 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$14 GND CLK B|OUT GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$15 GND PHI2 IN|out GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$16 IN|out CLK GND GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$17 GND \$53 PHI3 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$18 GND IN|out \$57 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$19 \$57 A|OUT \$53 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$20 GND IN|out IN|OUT GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$21 GND IN|OUT$3 PHI1 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$22 GND IN|OUT$2 IN|OUT$3 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$23 GND IN|OUT IN|OUT$2 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$24 GND PHI1 IN|OUT$1 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$25 GND IN|OUT$5 A|OUT GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$26 GND IN|OUT$4 IN|OUT$5 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$27 GND IN|OUT$1 IN|OUT$4 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$28 VDD \$1 \$6 VDD sg13_hv_pmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$29 \$6 \$8 VDD VDD sg13_hv_pmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$30 VDD \$6 PHI4 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$31 \$1 B|OUT \$22 VDD sg13_hv_pmos L=1.8u W=1.2u AS=0.408p AD=0.408p PS=3.08u
++ PD=3.08u
+M$32 \$22 PHI1 VDD VDD sg13_hv_pmos L=1.8u W=1.2u AS=0.408p AD=0.408p PS=3.08u
++ PD=3.08u
+M$33 VDD \$1 \$3 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$34 VDD \$20 PHI2 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$35 VDD PHI2 OUT VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$36 VDD \$19 \$20 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$37 VDD \$3 \$19 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$38 VDD \$21 \$8 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$39 VDD \$23 \$21 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$40 VDD OUT \$23 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$41 VDD CLK B|OUT VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$42 IN|out PHI2 \$52 VDD sg13_hv_pmos L=1.8u W=1.2u AS=0.408p AD=0.408p
++ PS=3.08u PD=3.08u
+M$43 \$52 CLK VDD VDD sg13_hv_pmos L=1.8u W=1.2u AS=0.408p AD=0.408p PS=3.08u
++ PD=3.08u
+M$44 VDD IN|out \$53 VDD sg13_hv_pmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$45 \$53 A|OUT VDD VDD sg13_hv_pmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$46 VDD \$53 PHI3 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p PS=1.88u
++ PD=1.88u
+M$47 VDD IN|out IN|OUT VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u
+M$48 VDD IN|OUT$3 PHI1 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u
+M$49 VDD IN|OUT$2 IN|OUT$3 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u
+M$50 VDD IN|OUT IN|OUT$2 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u
+M$51 VDD PHI1 IN|OUT$1 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u
+M$52 VDD IN|OUT$5 A|OUT VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u
+M$53 VDD IN|OUT$4 IN|OUT$5 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u
+M$54 VDD IN|OUT$1 IN|OUT$4 VDD sg13_hv_pmos L=0.9u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u
+C$55 \$3 GND cap_cmim w=7u l=7u A=49p P=28u m=1
+C$56 OUT GND cap_cmim w=7u l=7u A=49p P=28u m=1
+C$57 IN|OUT GND cap_cmim w=7u l=7u A=49p P=28u m=1
+C$58 IN|OUT$1 GND cap_cmim w=7u l=7u A=49p P=28u m=1
+.ENDS pulse_gen_circuit

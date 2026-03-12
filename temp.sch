@@ -25,6 +25,19 @@ N -1250 -190 -1250 -160 {lab=VICM_REF}
 N -1070 -190 -1070 -160 {lab=VICM_REF}
 N -1250 -160 -1070 -160 {lab=VICM_REF}
 N -1070 -270 -1070 -250 {lab=vinp}
+N -1430 -470 -1430 -440 {lab=vdd}
+N -1570 -470 -1570 -440 {lab=gnd}
+N -1510 -470 -1510 -440 {lab=gnd}
+N -1570 -470 -1510 -470 {lab=gnd}
+N -1530 -440 -1510 -440 {lab=gnd}
+N -1510 -440 -1510 -410 {lab=gnd}
+N -1570 -410 -1510 -410 {lab=gnd}
+N -1470 -470 -1470 -410 {lab=vdd}
+N -1470 -470 -1430 -470 {lab=vdd}
+N -1470 -410 -1430 -410 {lab=vdd}
+N -1430 -510 -1430 -470 {lab=vdd}
+N -1570 -540 -1570 -470 {lab=gnd}
+N -1570 -540 -1380 -540 {lab=gnd}
 C {gnd.sym} -420 20 0 0 {name=l9 lab=GND}
 C {gnd.sym} -260 20 0 0 {name=l10 lab=GND}
 C {sg13g2_pr/cap_cmim.sym} -260 -10 0 1 {name=C1
@@ -117,3 +130,20 @@ value=100
 footprint=1206
 device=resistor
 m=1}
+C {sg13g2_pr/sg13_hv_pmos.sym} -1450 -440 0 0 {name=M4
+l=0.4u
+w=4.5u
+ng=1
+m=4
+model=sg13_hv_pmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_hv_nmos.sym} -1550 -440 0 1 {name=M5
+l=2u
+w=2u
+ng=1
+m=4
+model=sg13_hv_nmos
+spiceprefix=X
+}
+C {lab_pin.sym} -1430 -510 0 0 {name=p6 sig_type=std_logic lab=vdd}

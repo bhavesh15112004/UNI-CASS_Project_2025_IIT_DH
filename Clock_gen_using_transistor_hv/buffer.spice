@@ -5,7 +5,7 @@ x1 in net1 vdd gnd inverter
 x2 net1 net2 vdd gnd inverter
 x3 net2 net3 vdd gnd inverter
 x4 net3 out vdd gnd inverter
-XC1 net1 gnd net4 cap_rfcmim w=7.0e-6 l=7.0e-6 wfeed=5.0e-6
+C1 net1 gnd cap_cmim w=7.0e-6 l=7.0e-6 m=1
 .ends
 
 * expanding   symbol:
