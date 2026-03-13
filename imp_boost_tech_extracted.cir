@@ -1,70 +1,70 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 11:21
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 12:23
 
-.SUBCKT imp_boost_tech GND OTA_VOM OTA_VOP VDD VCM_REF VICM|VICM_REF BV PHI3
-+ PHI1 VINP VOP VINM VOM PHI2 PHI4
+.SUBCKT imp_boost_tech GND OTA_VOM OTA_VOP OTA_VINP OTA_VINM VDD VCM_REF
++ VICM_REF BV PHI3 PHI1 VINM VOM VINP VOP PHI4 PHI2
 M$1 GND GND GND GND sg13_hv_nmos L=2u W=8u AS=2.72p AD=2.72p PS=18.72u PD=18.72u
 M$2 OTA_VOM \$2 GND GND sg13_hv_nmos L=2u W=4u AS=1.36p AD=1.36p PS=9.36u
 + PD=9.36u
 M$3 GND \$2 OTA_VOP GND sg13_hv_nmos L=2u W=4u AS=1.36p AD=1.36p PS=9.36u
 + PD=9.36u
-M$9 \$13 PHI1 \$54 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p PS=1.28u
-+ PD=1.28u
-M$10 \$52 PHI1 OTA_VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$9 OTA_VINM PHI1 \$55 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
++ PS=1.28u PD=1.28u
+M$10 \$52 PHI1 OTA_VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
 M$11 \$17 \$17 GND GND sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
 + PD=2.68u
 M$12 GND \$17 \$2 GND sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
 + PD=2.68u
-M$13 \$68 PHI3 \$57 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$13 \$68 PHI3 \$56 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$14 \$50 PHI3 \$14 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$14 \$50 PHI3 OTA_VINM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$15 VINP PHI1 \$56 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$15 VINM PHI1 \$54 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$16 \$14 PHI1 \$59 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$16 OTA_VINP PHI1 \$58 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$17 \$51 PHI1 OTA_VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$17 \$51 PHI1 OTA_VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$18 OTA_VOP PHI1 VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$18 OTA_VOP PHI1 VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$19 \$56 PHI3 \$58 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$19 \$54 PHI3 \$57 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$20 \$49 PHI3 \$13 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$20 \$49 PHI3 OTA_VINP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$21 VINM PHI1 \$68 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$21 VINP PHI1 \$68 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$22 \$13 PHI2 \$59 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$22 OTA_VINM PHI2 \$58 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$23 \$52 PHI2 OTA_VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$23 \$52 PHI2 OTA_VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$24 OTA_VOM PHI1 VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$24 OTA_VOM PHI1 VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$25 \$68 PHI4 \$58 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$25 \$68 PHI4 \$57 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$26 \$50 PHI4 \$13 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$26 \$50 PHI4 OTA_VINP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$27 VINP PHI2 \$68 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$27 VINM PHI2 \$68 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$28 \$14 PHI2 \$54 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$28 OTA_VINP PHI2 \$55 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$29 \$51 PHI2 OTA_VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$29 \$51 PHI2 OTA_VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$30 OTA_VOP PHI2 VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$30 OTA_VOP PHI2 VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$31 \$56 PHI4 \$57 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$31 \$54 PHI4 \$56 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$32 \$49 PHI4 \$14 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$32 \$49 PHI4 OTA_VINM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$33 VINM PHI2 \$56 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$33 VINP PHI2 \$54 GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
-M$34 OTA_VOM PHI2 VOP GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
+M$34 OTA_VOM PHI2 VOM GND sg13_hv_nmos L=0.45u W=0.3u AS=0.102p AD=0.102p
 + PS=1.28u PD=1.28u
 M$35 VDD VDD VDD VDD sg13_hv_pmos L=0.4u W=18u AS=6.12p AD=6.12p PS=38.72u
 + PD=38.72u
-M$36 OTA_VOP \$13 \$16 VDD sg13_hv_pmos L=1u W=9u AS=3.06p AD=3.06p PS=19.36u
-+ PD=19.36u
-M$37 \$16 \$14 OTA_VOM VDD sg13_hv_pmos L=1u W=9u AS=3.06p AD=3.06p PS=19.36u
-+ PD=19.36u
+M$36 OTA_VOP OTA_VINP \$16 VDD sg13_hv_pmos L=1u W=9u AS=3.06p AD=3.06p
++ PS=19.36u PD=19.36u
+M$37 \$16 OTA_VINM OTA_VOM VDD sg13_hv_pmos L=1u W=9u AS=3.06p AD=3.06p
++ PS=19.36u PD=19.36u
 M$39 \$24 VCM_REF \$2 VDD sg13_hv_pmos L=0.5u W=4.5u AS=1.53p AD=1.53p
 + PS=10.36u PD=10.36u
 M$41 \$24 OTA_VOM \$17 VDD sg13_hv_pmos L=0.5u W=2.25u AS=0.765p AD=0.765p
@@ -73,16 +73,16 @@ M$42 \$17 OTA_VOP \$24 VDD sg13_hv_pmos L=0.5u W=2.25u AS=0.765p AD=0.765p
 + PS=5.18u PD=5.18u
 M$47 \$16 BV VDD VDD sg13_hv_pmos L=1u W=16u AS=5.44p AD=5.44p PS=34.72u
 + PD=34.72u
-M$51 VICM|VICM_REF \$14 \$14 VDD sg13_hv_pmos L=1u W=50u AS=11p AD=11p PS=62.2u
-+ PD=62.2u
-M$56 \$13 \$13 VICM|VICM_REF VDD sg13_hv_pmos L=1u W=50u AS=11p AD=11p PS=62.2u
-+ PD=62.2u
+M$51 VICM_REF OTA_VINM OTA_VINM VDD sg13_hv_pmos L=1u W=50u AS=11p AD=11p
++ PS=62.2u PD=62.2u
+M$56 OTA_VINP OTA_VINP VICM_REF VDD sg13_hv_pmos L=1u W=50u AS=11p AD=11p
++ PS=62.2u PD=62.2u
 M$61 \$24 BV VDD VDD sg13_hv_pmos L=1u W=16u AS=5.44p AD=5.44p PS=34.72u
 + PD=34.72u
 M$65 BV BV VDD VDD sg13_hv_pmos L=1u W=4u AS=1.36p AD=1.36p PS=8.68u PD=8.68u
-C$66 \$52 \$59 cap_cmim w=5.7u l=5.7u A=32.49p P=22.8u m=2
-C$67 \$51 \$54 cap_cmim w=5.7u l=5.7u A=32.49p P=22.8u m=2
+C$66 \$52 \$58 cap_cmim w=5.7u l=5.7u A=32.49p P=22.8u m=2
+C$67 \$51 \$55 cap_cmim w=5.7u l=5.7u A=32.49p P=22.8u m=2
 C$68 \$2 GND cap_cmim w=50u l=14u A=700p P=128u m=1
-C$69 \$49 \$57 cap_cmim w=26u l=12.8u A=332.8p P=77.6u m=2
-C$73 \$50 \$58 cap_cmim w=26u l=12.8u A=332.8p P=77.6u m=2
+C$69 \$49 \$56 cap_cmim w=26u l=12.8u A=332.8p P=77.6u m=2
+C$73 \$50 \$57 cap_cmim w=26u l=12.8u A=332.8p P=77.6u m=2
 .ENDS imp_boost_tech
