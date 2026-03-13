@@ -8,16 +8,12 @@ N -390 10 -360 10 {lab=bv}
 N -390 40 -360 40 {lab=ota_vinp}
 N -390 80 -360 80 {lab=ota_vinm}
 N -390 110 -360 110 {lab=gnd}
-N -850 -240 -750 -240 {lab=#net1}
-N -850 -220 -750 -220 {lab=#net2}
-N -520 -220 -490 -220 {lab=#net3}
-N -610 -220 -580 -220 {lab=#net4}
-N -610 -240 -580 -240 {lab=#net5}
-N -520 -240 -490 -240 {lab=#net6}
-N -20 -220 10 -220 {lab=#net7}
-N -110 -220 -80 -220 {lab=#net8}
-N -110 -240 -80 -240 {lab=#net9}
-N -20 -240 10 -240 {lab=#net10}
+N -610 -220 -580 -220 {lab=#net1}
+N -610 -240 -580 -240 {lab=#net2}
+N -20 -220 10 -220 {lab=#net3}
+N -110 -220 -80 -220 {lab=#net4}
+N -110 -240 -80 -240 {lab=#net5}
+N -20 -240 10 -240 {lab=#net6}
 N -350 -240 -250 -240 {lab=ota_vinp}
 N -350 -220 -250 -220 {lab=ota_vinm}
 N 390 -240 710 -240 {lab=vom}
@@ -36,15 +32,18 @@ N -430 -370 -430 -290 {lab=phi3}
 N -410 -370 -410 -290 {lab=phi4}
 N 150 -240 250 -240 {lab=ota_vop}
 N 150 -220 250 -220 {lab=ota_vom}
-N -580 -420 -580 -240 {lab=#net5}
-N -520 -420 -520 -240 {lab=#net6}
-N -580 -220 -580 -70 {lab=#net4}
-N -520 -220 -520 -70 {lab=#net3}
-N -80 -420 -80 -240 {lab=#net9}
-N -80 -220 -80 -70 {lab=#net8}
-N -20 -220 -20 -70 {lab=#net7}
-N -20 -420 -20 -240 {lab=#net10}
-N 710 -240 710 -220 {lab=vom}
+N -580 -420 -580 -240 {lab=#net2}
+N -520 -420 -520 -240 {lab=#net7}
+N -80 -420 -80 -240 {lab=#net5}
+N -20 -420 -20 -240 {lab=#net6}
+N -520 -220 -520 20 {lab=#net8}
+N -20 -220 -20 30 {lab=#net3}
+N -80 -220 -80 30 {lab=#net4}
+N -580 -220 -580 20 {lab=#net1}
+N -520 -240 -490 -240 {lab=#net7}
+N -520 -220 -490 -220 {lab=#net8}
+N -850 -240 -750 -240 {lab=#net9}
+N -850 -220 -750 -220 {lab=#net10}
 C {lab_pin.sym} -390 80 0 0 {name=p2 sig_type=std_logic lab=ota_vinm}
 C {lab_pin.sym} -390 40 0 0 {name=p5 sig_type=std_logic lab=ota_vinp
 }
@@ -56,54 +55,24 @@ C {lab_pin.sym} -990 -240 1 0 {name=p13 sig_type=std_logic lab=vinp}
 C {lab_pin.sym} -990 -220 3 0 {name=p14 sig_type=std_logic lab=vinm}
 C {lab_pin.sym} 210 -220 3 0 {name=p15 sig_type=std_logic lab=ota_vom}
 C {lab_pin.sym} 200 -240 1 0 {name=p16 sig_type=std_logic lab=ota_vop}
-C {sg13g2_pr/cap_cmim.sym} -550 -420 1 0 {name=C3
+C {sg13g2_pr/cap_cmim.sym} -550 -330 1 0 {name=C4
 model=cap_cmim
 w=26e-6
 l=12.8e-6
-m=1
-spiceprefix=X}
-C {sg13g2_pr/cap_cmim.sym} -550 -330 3 1 {name=C4
-model=cap_cmim
-w=26e-6
-l=12.8e-6
-m=1
-spiceprefix=X}
+m=2
+spiceprefix=""}
 C {sg13g2_pr/cap_cmim.sym} -550 -160 1 0 {name=C5
 model=cap_cmim
 w=26e-6
 l=12.8e-6
-m=1
-spiceprefix=X}
-C {sg13g2_pr/cap_cmim.sym} -550 -70 3 1 {name=C6
-model=cap_cmim
-w=26e-6
-l=12.8e-6
-m=1
-spiceprefix=X}
-C {sg13g2_pr/cap_cmim.sym} -50 -420 1 0 {name=C7
-model=cap_cmim
-w=5.7e-6
-l=5.7e-6
-m=1
-spiceprefix=X}
-C {sg13g2_pr/cap_cmim.sym} -50 -330 3 1 {name=C8
-model=cap_cmim
-w=5.7e-6
-l=5.7e-6
-m=1
-spiceprefix=X}
+m=2
+spiceprefix=""}
 C {sg13g2_pr/cap_cmim.sym} -50 -160 1 0 {name=C9
 model=cap_cmim
 w=5.7e-6
 l=5.7e-6
-m=1
-spiceprefix=X}
-C {sg13g2_pr/cap_cmim.sym} -50 -70 3 1 {name=C10
-model=cap_cmim
-w=5.7e-6
-l=5.7e-6
-m=1
-spiceprefix=X}
+m=2
+spiceprefix=""}
 C {lab_pin.sym} -300 -240 1 0 {name=p17 sig_type=std_logic lab=ota_vinp}
 C {lab_pin.sym} -300 -220 1 1 {name=p18 sig_type=std_logic lab=ota_vinm}
 C {lab_pin.sym} 430 -240 1 0 {name=p19 sig_type=std_logic lab=vom}
@@ -128,8 +97,6 @@ C {lab_pin.sym} -180 -160 2 0 {name=p36 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 80 -160 2 0 {name=p37 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 320 -160 2 0 {name=p38 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -390 110 0 0 {name=p39 sig_type=std_logic lab=gnd}
-C {lab_pin.sym} 520 -160 0 0 {name=p40 sig_type=std_logic lab=gnd}
-C {lab_pin.sym} 710 -160 0 0 {name=p41 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} -180 10 0 1 {name=p42 sig_type=std_logic lab=vdd}
 C {iopin.sym} -800 -10 0 0 {name=p1 lab=vinp}
 C {iopin.sym} -800 20 0 0 {name=p3 lab=vinm}
@@ -151,15 +118,9 @@ C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CAS
 C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/CHOPPER.sym} 10 -180 0 0 {name=x5}
 C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/CHOPPER.sym} 250 -180 0 0 {name=x6}
 C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Differntial_ended_symbol_making.sym} -270 180 1 0 {name=x7}
-C {sg13g2_pr/cap_cmim.sym} 710 -190 0 0 {name=C1
+C {sg13g2_pr/cap_cmim.sym} -50 -320 1 0 {name=C2
 model=cap_cmim
-w=7.0e-6
-l=7.0e-6
-m=1
-spiceprefix=X}
-C {sg13g2_pr/cap_cmim.sym} 520 -190 0 0 {name=C2
-model=cap_cmim
-w=7.0e-6
-l=7.0e-6
-m=1
-spiceprefix=X}
+w=5.7e-6
+l=5.7e-6
+m=2
+spiceprefix=""}

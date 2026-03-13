@@ -211,7 +211,7 @@ model=cap_cmim
 w=14.0e-6
 l=50.0e-6
 m=1
-spiceprefix=X}
+spiceprefix=""}
 C {iopin.sym} -620 -170 3 0 {name=p13 lab=vdd}
 C {sg13g2_pr/sg13_hv_pmos.sym} -370 250 0 0 {name=M2
 l=1u
