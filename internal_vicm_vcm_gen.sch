@@ -23,6 +23,7 @@ N 290 -150 340 -150 {lab=VDD}
 N 980 -100 980 -80 {lab=gnd}
 N 980 -200 980 -160 {lab=clk}
 N 290 -230 340 -230 {lab=gnd}
+N 1460 60 1540 60 {lab=GND}
 C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/vcm_ref_vicm_ref_gen.sym} 110 160 0 0 {name=x1}
 C {lab_pin.sym} 260 120 2 0 {name=p28 sig_type=std_logic lab=VDD
 }
@@ -65,8 +66,8 @@ C {lab_pin.sym} 1170 30 1 0 {name=p24 sig_type=std_logic lab=vinm
 }
 C {gnd.sym} 1040 90 0 0 {name=l11 lab=GND}
 C {gnd.sym} 1170 90 0 0 {name=l13 lab=GND}
-C {vsource.sym} 1040 60 0 0 {name=V6 value="sin(0.8 1m 10000) " savecurrent=false}
-C {vsource.sym} 1170 60 0 0 {name=V7 value="sin(0.8 -1m 10000) " savecurrent=false}
+C {vsource.sym} 1040 60 0 0 {name=V6 value="sin(0.8 1m 100) " savecurrent=false}
+C {vsource.sym} 1170 60 0 0 {name=V7 value="sin(0.8 -1m 100) " savecurrent=false}
 C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/pulse_gen_circuit.sym} 430 -260 0 0 {name=x3}
 C {devices/lab_pin.sym} 580 -320 2 0 {name=p1 sig_type=std_logic lab=clk
 }
@@ -94,8 +95,8 @@ C {devices/lab_pin.sym} 980 -200 2 0 {name=p27 sig_type=std_logic lab=clk
 C {devices/code_shown.sym} 1300 -430 0 0 {name=NGSPICE only_toplevel=true 
 value="
 
-.option cshunt=2.5e-15
-.tran 1u 5m
+.option cshunt=2.5e-13
+.tran 10u 20m
 .control
 run
 plot v(PHI1) v(PHI2) v(PHI3) v(PHI4)
@@ -106,3 +107,18 @@ plot  v(vop,vom)
 C {devices/lab_pin.sym} 340 -230 2 0 {name=p26 sig_type=std_logic lab=gnd
 }
 C {vsource.sym} 980 -130 0 0 {pname=V1 value="pulse(0 1.6 0 10n 10n 99.99u 200u) " savecurrent=false}
+C {capa-2.sym} 1460 30 0 0 {name=C1
+m=1
+value=1p
+footprint=1206
+device=polarized_capacitor}
+C {capa-2.sym} 1540 30 0 0 {name=C2
+m=1
+value=1p
+footprint=1206
+device=polarized_capacitor}
+C {lab_pin.sym} 1540 0 1 0 {name=p7 sig_type=std_logic lab=vinm
+}
+C {lab_pin.sym} 1460 0 1 0 {name=p9 sig_type=std_logic lab=vinp
+}
+C {gnd.sym} 1500 60 0 0 {name=l3 lab=GND}

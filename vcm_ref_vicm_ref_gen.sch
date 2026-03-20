@@ -87,8 +87,12 @@ N 450 -160 450 -130 {lab=gnd}
 N 400 -130 450 -130 {lab=gnd}
 N 400 -160 450 -160 {lab=gnd}
 N 450 -250 450 -160 {lab=gnd}
-N -40 50 130 50 {lab=gnd}
-N 850 -10 1030 -10 {lab=gnd}
+N 100 50 130 50 {lab=gnd}
+N 1020 -10 1030 -10 {lab=gnd}
+N 100 0 100 50 {lab=gnd}
+N -40 50 100 50 {lab=gnd}
+N 1020 -60 1020 -10 {lab=gnd}
+N 850 -10 1020 -10 {lab=gnd}
 C {sg13g2_pr/sg13_hv_nmos.sym} -210 20 0 1 {name=M6
 l=0.5u
 w=1u
@@ -248,3 +252,15 @@ C {lab_pin.sym} -160 -220 3 0 {name=p6 sig_type=std_logic lab=b_v
 }
 C {lab_pin.sym} 730 -280 3 0 {name=p17 sig_type=std_logic lab=b_v
 }
+C {sg13g2_pr/cap_cmim.sym} 100 -30 0 0 {name=C1
+model=cap_cmim
+w=7.0e-6
+l=7.0e-6
+m=1
+spiceprefix=X}
+C {sg13g2_pr/cap_cmim.sym} 1020 -90 0 0 {name=C2
+model=cap_cmim
+w=7.0e-6
+l=7.0e-6
+m=1
+spiceprefix=X}
