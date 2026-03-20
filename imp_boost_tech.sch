@@ -60,19 +60,19 @@ model=cap_cmim
 w=26e-6
 l=12.8e-6
 m=2
-spiceprefix=""}
+spiceprefix=X}
 C {sg13g2_pr/cap_cmim.sym} -550 -160 1 0 {name=C5
 model=cap_cmim
 w=26e-6
 l=12.8e-6
 m=2
-spiceprefix=""}
+spiceprefix=X}
 C {sg13g2_pr/cap_cmim.sym} -50 -160 1 0 {name=C9
 model=cap_cmim
 w=5.7e-6
 l=5.7e-6
 m=2
-spiceprefix=""}
+spiceprefix=X}
 C {lab_pin.sym} -300 -240 1 0 {name=p17 sig_type=std_logic lab=ota_vinp}
 C {lab_pin.sym} -300 -220 1 1 {name=p18 sig_type=std_logic lab=ota_vinm}
 C {lab_pin.sym} 430 -240 1 0 {name=p19 sig_type=std_logic lab=vom}
@@ -123,4 +123,4 @@ model=cap_cmim
 w=5.7e-6
 l=5.7e-6
 m=2
-spiceprefix=""}
+spiceprefix=X}

@@ -1,9 +1,39 @@
-** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/digital_pulse_ina_temp_TOP.sch
-.subckt digital_pulse_ina_temp_TOP clk DVDD gnd vop vom bv vinp vinm AVDD VDD
-*.PININFO clk:B DVDD:B gnd:B vop:B vom:B bv:B vinp:B vinm:B AVDD:B VDD:B
-x1 PHI1 vinp PHI2 vinm PHI3 vop PHI4 vom gnd bv VICM_REF VCM_REF AVDD imp_boost_tech
-x2 clk DVDD gnd phi1 phi2 phi3 phi4 pulse_gen_circuit
-x3 VDD bv gnd VCM_REF VICM_REF vcm_ref_vicm_ref_gen
+** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/test_input_imp.sch
+.subckt test_input_imp
+
+V5 VDD GND 1.6
+V8 VCM_REF GND dc 0.6
+V9 VICM_REF GND dc 0.8
+I1 bv GND 1u
+x1 PHI1 vinp PHI2 vinm PHI3 vop PHI4 vom gnd bv VICM_REF VCM_REF VDD imp_boost_tech
+V6 vinp GND sin(0.8 -1m 5000)
+V7 vinm GND sin(0.8 1m 5000)
+x2 clk vdd gnd phi1 phi2 phi3 phi4 pulse_gen_circuit
+V1 clk gnd pulse(0 1.6 0 10n 10n 99.99u 200u)
+**** begin user architecture code
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerHBT.lib hbt_typ
+.lib cornerRES.lib res_typ
+.lib cornerCAP.lib cap_typ
+
+
+
+
+
+.option cshunt=2.5e-15
+
+.control
+  tran 1u 10m       ; Run transient simulation
+  meas TRAN irms RMS i(V7) from=0 to=10m ; Measure RMS of v(out)
+.endc
+
+
+
+**** end user architecture code
 .ends
 
 * expanding   symbol:
@@ -41,31 +71,6 @@ x8 phi1 out1 vdd gnd buffer
 x9 phi2 net1 vdd gnd buffer
 x3 x phi1 vdd gnd buffer
 x5 y phi2 vdd gnd buffer
-.ends
-
-
-* expanding   symbol:
-*+  /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/vcm_ref_vicm_ref_gen.sym # of pins=5
-** sym_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/vcm_ref_vicm_ref_gen.sym
-** sch_path: /home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/vcm_ref_vicm_ref_gen.sch
-.subckt vcm_ref_vicm_ref_gen vdd b_v gnd vcm vicm
-*.PININFO vicm:B vdd:B vcm:B b_v:B gnd:B
-M6 net1 net1 gnd gnd sg13_hv_nmos w=1u l=0.5u ng=1 m=1
-M13 net1 pos net2 vdd sg13_hv_pmos w=2.25u l=0.50u ng=1 m=1
-M14 vicm net1 gnd gnd sg13_hv_nmos w=1u l=0.5u ng=1 m=1
-M15 vicm vicm net2 vdd sg13_hv_pmos w=2.25u l=0.5u ng=1 m=2
-M16 net2 b_v vdd vdd sg13_hv_pmos w=4u l=1u ng=1 m=4
-M17 net1 pos net2 vdd sg13_hv_pmos w=2.25u l=0.50u ng=1 m=1
-M1 vdd vdd pos gnd sg13_hv_nmos w=10u l=0.45u ng=1 m=1
-M2 pos vdd gnd gnd sg13_hv_nmos w=0.3u l=3.7u ng=1 m=1
-M3 net3 net3 gnd gnd sg13_hv_nmos w=1u l=0.5u ng=1 m=1
-M4 net3 pos1 net4 vdd sg13_hv_pmos w=2.25u l=0.50u ng=1 m=1
-M5 vcm net3 gnd gnd sg13_hv_nmos w=1u l=0.5u ng=1 m=1
-M7 vcm vcm net4 vdd sg13_hv_pmos w=2.25u l=0.5u ng=1 m=2
-M8 net4 b_v vdd vdd sg13_hv_pmos w=4u l=1u ng=1 m=4
-M9 net3 pos1 net4 vdd sg13_hv_pmos w=2.25u l=0.50u ng=1 m=1
-M10 vdd vdd pos1 gnd sg13_hv_nmos w=0.8u l=0.45u ng=1 m=1
-M11 pos1 vdd gnd gnd sg13_hv_nmos w=0.3u l=1.4u ng=1 m=1
 .ends
 
 
@@ -160,3 +165,5 @@ x4 net3 out vdd gnd inverter
 C1 net1 gnd cap_cmim w=7.0e-6 l=7.0e-6 m=1
 .ends
 
+.GLOBAL GND
+.GLOBAL gnd

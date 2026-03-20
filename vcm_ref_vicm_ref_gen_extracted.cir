@@ -1,0 +1,31 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 20/03/2026 18:49
+
+.SUBCKT vcm_ref_vicm_ref_gen GND VICM VDD B_V VCM
+M$1 GND VDD \$9 GND sg13_hv_nmos L=3.7u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$2 \$2 \$2 GND GND sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u PD=2.68u
+M$3 GND \$2 VICM GND sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u
+M$4 VDD VDD \$9 GND sg13_hv_nmos L=0.45u W=10u AS=3.4p AD=3.4p PS=20.68u
++ PD=20.68u
+M$5 \$31 \$31 GND GND sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u
+M$6 GND \$31 VCM GND sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u
+M$7 \$46 VDD GND GND sg13_hv_nmos L=1.4u W=0.3u AS=0.102p AD=0.102p PS=1.28u
++ PD=1.28u
+M$8 \$46 VDD VDD GND sg13_hv_nmos L=0.45u W=0.8u AS=0.272p AD=0.272p PS=2.28u
++ PD=2.28u
+M$9 \$10 VICM VICM VDD sg13_hv_pmos L=0.5u W=4.5u AS=1.53p AD=1.53p PS=10.36u
++ PD=10.36u
+M$11 \$10 \$9 \$2 VDD sg13_hv_pmos L=0.5u W=4.5u AS=1.53p AD=1.53p PS=10.36u
++ PD=10.36u
+M$13 \$10 B_V VDD VDD sg13_hv_pmos L=1u W=16u AS=5.44p AD=5.44p PS=34.72u
++ PD=34.72u
+M$17 \$36 VCM VCM VDD sg13_hv_pmos L=0.5u W=4.5u AS=1.53p AD=1.53p PS=10.36u
++ PD=10.36u
+M$19 \$36 \$46 \$31 VDD sg13_hv_pmos L=0.5u W=4.5u AS=1.53p AD=1.53p PS=10.36u
++ PD=10.36u
+M$21 \$36 B_V VDD VDD sg13_hv_pmos L=1u W=16u AS=5.44p AD=5.44p PS=34.72u
++ PD=34.72u
+.ENDS vcm_ref_vicm_ref_gen

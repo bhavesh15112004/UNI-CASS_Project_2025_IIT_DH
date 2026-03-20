@@ -39,8 +39,6 @@ C {devices/lab_pin.sym} 230 40 2 0 {name=p22 sig_type=std_logic lab=vom
 }
 C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/imp_boost_tech.sym} 30 20 0 0 {name=x1}
 C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/pulse_gen_circuit.sym} 320 30 0 0 {name=x2}
-C {devices/lab_pin.sym} 470 -30 2 0 {name=p1 sig_type=std_logic lab=clk
-}
 C {lab_pin.sym} 470 -10 2 0 {name=p2 sig_type=std_logic lab=DVDD}
 C {lab_pin.sym} 470 10 2 0 {name=p3 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 470 30 2 0 {name=p4 sig_type=std_logic lab=phi1}
@@ -54,9 +52,18 @@ C {iopin.sym} 710 10 0 0 {name=p8 lab=DVDD}
 C {iopin.sym} 710 40 0 0 {name=p9 lab=gnd}
 C {iopin.sym} 710 70 0 0 {name=p23 lab=vop}
 C {iopin.sym} 710 110 0 0 {name=p24 lab=vom}
-C {iopin.sym} 710 140 0 0 {name=p27 lab=VCM_REF}
-C {iopin.sym} 710 180 0 0 {name=p28 lab=VICM_REF}
-C {iopin.sym} 710 220 0 0 {name=p29 lab=bv}
-C {iopin.sym} 710 260 0 0 {name=p30 lab=vinp}
-C {iopin.sym} 710 290 0 0 {name=p10 lab=vinm}
+C {iopin.sym} 710 130 0 0 {name=p29 lab=bv}
+C {iopin.sym} 710 170 0 0 {name=p30 lab=vinp}
+C {iopin.sym} 710 200 0 0 {name=p10 lab=vinm}
 C {iopin.sym} 710 -50 0 0 {name=p31 lab=AVDD}
+C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/vcm_ref_vicm_ref_gen.sym} 60 270 0 0 {name=x3}
+C {devices/lab_pin.sym} 470 -30 2 0 {name=p32 sig_type=std_logic lab=clk
+}
+C {iopin.sym} 710 -90 0 0 {name=p33 lab=VDD}
+C {lab_pin.sym} 210 230 0 1 {name=p34 sig_type=std_logic lab=VDD
+}
+C {lab_pin.sym} 210 250 2 0 {name=p35 sig_type=std_logic lab=bv}
+C {devices/lab_pin.sym} 210 270 2 0 {name=p36 sig_type=std_logic lab=gnd
+}
+C {lab_pin.sym} 210 310 2 0 {name=p27 sig_type=std_logic lab=VICM_REF}
+C {lab_pin.sym} 210 290 2 0 {name=p28 sig_type=std_logic lab=VCM_REF}

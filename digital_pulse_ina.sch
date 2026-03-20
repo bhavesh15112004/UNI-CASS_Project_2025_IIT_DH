@@ -64,8 +64,8 @@ C {lab_pin.sym} 1060 320 1 0 {name=p24 sig_type=std_logic lab=vinm
 }
 C {gnd.sym} 930 380 0 0 {name=l11 lab=GND}
 C {gnd.sym} 1060 380 0 0 {name=l13 lab=GND}
-C {vsource.sym} 930 350 0 0 {name=V6 value="sin(0.8 5m 10000) " savecurrent=false}
-C {vsource.sym} 1060 350 0 0 {name=V7 value="dc 0.8 " savecurrent=false}
+C {vsource.sym} 930 350 0 0 {name=V6 value="sin(0.8 1m 10000) " savecurrent=false}
+C {vsource.sym} 1060 350 0 0 {name=V7 value="sin(0.8 -1m 10000) " savecurrent=false}
 C {/home/designer/shared/unicass_2026/Design_Files/github_clone_circuit_/UNI-CASS_Project_2025_IIT_DH/Clock_gen_using_transistor_hv/pulse_gen_circuit.sym} 320 30 0 0 {name=x2}
 C {devices/lab_pin.sym} 470 -30 2 0 {name=p1 sig_type=std_logic lab=clk
 }

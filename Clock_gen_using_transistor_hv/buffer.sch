@@ -31,4 +31,4 @@ model=cap_cmim
 w=7.0e-6
 l=7.0e-6
 m=1
-spiceprefix=""}
+spiceprefix=X}
